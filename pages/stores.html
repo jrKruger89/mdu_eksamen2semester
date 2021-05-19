@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="da">
     <head>
-        <title>Draupnir | Kontakt</title>
+        <title>Draupnir | Find forhandler</title>
         <link rel="icon" href="../img/icon.png" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
-        <script src="../js/script.js" defer></script>
+
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta
@@ -30,6 +30,10 @@
             href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
         />
         <script src="https://use.fontawesome.com/ac4a511276.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" />
+        <script src="../js/script.js" defer></script>
+        <script src="../js/map.js" defer></script>
     </head>
 
     <body>
@@ -122,13 +126,12 @@
             </nav>
         </header>
         <main>
-            <section class="contact_section">
-                <div class="contact_wrapper">
-                    <h1 class="contact_h1">Kontakt</h1>
-                    <div class="line contact_line"></div>
-                    <p class="contact_p">Vi er klar til at hjælpe dig</p>
-                </div>
-                <img src="../img/solveig_4.jpg" alt="" class="contact_img" />
+            <section class="find_store">
+                <h1 class="black_text store_h1">
+                    Find din forhandler i Danmark
+                </h1>
+                <div class="line store_line"></div>
+                <div id="map"></div>
             </section>
         </main>
         <footer>
