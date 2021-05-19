@@ -733,6 +733,22 @@ footer {
   height: 25px;
 }
 
+/*-------- Error page --------*/
+.error_page {
+  text-align: center;
+}
+
+.error_h1 {
+  padding-top: 200px;
+}
+
+.error_img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 130%;
+}
+
 /* --- mediaquery ipad og tablets ----- */
 @media screen and (min-width: 672px) and (max-width: 950px) {
   h1 {
