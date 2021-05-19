@@ -478,6 +478,11 @@ nav {
   border-top-color: #af0404 !important;
 }
 
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
 /*----- Forhandler slut -----*/
 /*----- Start Om Draupnir Danmark -----*/
 /*-- Om Draupnir -- */
@@ -491,6 +496,7 @@ nav {
 
 .about_line {
   margin: 5px auto 25px auto;
+  width: 255px;
 }
 
 .about_img {
@@ -507,6 +513,11 @@ nav {
   border: none;
   color: #252525;
   text-align: left;
+  border: solid #af0404;
+  margin-top: 10px;
+  width: 130px;
+  border: solid #af0404;
+  text-align: center;
 }
 
 .open {
@@ -584,15 +595,6 @@ nav {
   background-color: #ededed;
 }
 
-.talented_rider_wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .talented_riders_h2 {
   text-align: center;
 }
@@ -602,33 +604,34 @@ nav {
   width: 140px;
 }
 
-.talented_riders {
-  width: 45%;
+.talented_rider_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.talented_riders {
+  text-align: center;
+  width: 40%;
+  height: 150px;
 }
 
 .talented_rider_img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80%;
 }
 
-.talented_rider_flag_img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+.talented_riders_p {
   position: relative;
-  top: -60px;
-  left: -2px;
+  padding-top: 10px;
 }
 
 /*----- Slut Om Draupnir Danmark -----*/
@@ -851,6 +854,38 @@ footer {
   .mapboxgl-popup-content a {
     font-size: 18px;
   }
+  /*-- Om Draupnir -- */
+  .about_line {
+    width: 445px;
+  }
+  /*-- profilrytter -- */
+  .rider_wrapper {
+    height: 1475px;
+  }
+  .about_profile_rider_line {
+    width: 160px;
+  }
+  .rider_profile {
+    width: 50%;
+    height: 440px;
+  }
+  .about_rider_line {
+    width: 280px;
+  }
+  /*-- Øvrige ryttere -- */
+  .talented_riders_line {
+    margin: 20px auto 25px auto;
+    width: 175px;
+  }
+  .talented_riders {
+    text-align: center;
+    width: 30%;
+    height: 170px;
+  }
+  .talented_rider_img {
+    width: 60%;
+  }
+  /*----- Slut Om Draupnir Danmark -----*/
   /*------ Footer ------*/
   .footer_h2 {
     margin: 5px 0 25px 0;
@@ -1155,31 +1190,101 @@ footer {
   .mapboxgl-popup-content a {
     font-size: 20px;
   }
-  /*----- Start Om Draupnir Danmark -----*/
   /*-- Om Draupnir -- */
-  .about_wrapper {
+  .about {
+    height: 100%;
+  }
+  .about_line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 60%;
-    margin: auto;
+    margin: 5px auto 25px auto;
+    width: 96%;
+    margin-left: -10%;
   }
   .about_text_wrapper {
-    width: 60%;
+    width: 100%;
     margin: auto;
   }
   .about_img {
     width: 536px;
-    height: 508px;
-    margin-bottom: 0;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 10px;
+    float: right;
+    border: 1px solid #252525;
   }
+  .open {
+    display: block;
+  }
+  /*-- profilrytter -- */
+  .rider_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 600px;
+  }
+  .about_profile_rider_h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about_profile_rider_line {
+    margin: 10px auto 50px auto;
+    width: 270px;
+  }
+  .rider_profile {
+    width: 31%;
+    height: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .rider_img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+  .about_rider_line {
+    width: 90%;
+  }
+  .about_rider_p {
+    margin: 10px 20px 10px 20px;
+  }
+  /*-- Øvrige ryttere -- */
+  .talented_riders_line {
+    margin: 30px auto 30px auto;
+    width: 140px;
+  }
+  .talented_rider_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .talented_riders {
+    text-align: center;
+    width: 25%;
+    height: 400%;
+  }
+  .talented_rider_img {
+    width: 85%;
+  }
+  .talented_riders_p {
+    position: relative;
+    padding-top: 20px;
+    bottom: 10px;
+    padding-bottom: 30px;
+  }
+  /*----- Slut Om Draupnir Danmark -----*/
   /*-------- Kontakt --------*/
   .contact_section {
     padding: 0;
