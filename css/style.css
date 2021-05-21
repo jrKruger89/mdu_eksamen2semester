@@ -452,7 +452,7 @@ nav {
 
 .store_line {
   width: 150px;
-  margin: 5px 0 25px 0;
+  margin: 5px auto 25px auto;
 }
 
 #map {
