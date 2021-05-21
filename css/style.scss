@@ -1,4 +1,4 @@
-/*---------- Sass Variabler --------- */
+/*---------- Sass Variabler ---------------------------------------- */
 $primary_black: #252525;
 $primary_red: #af0404;
 $primary_white: #ffffff;
@@ -7,31 +7,31 @@ $primary_gold: #cda46b;
 $secondary_black: #121212;
 $secondary_red: #74071e;
 $secondary_white: #fefffe;
-$secondary_goldt: #bf8c53;
+$secondary_gold: #bf8c53;
 /*---- */
 $tone_lightgray: #ededed;
 $tone_gray: #707070;
 $tone_darkgray: #414141;
 $tone_black: #000000;
-/*----------------------------------- */
-/*------------ fonts -------------- */
+/* ----------------------------------------------------------------- */
+/* --------------------------- fonts ------------------------------- */
 $secondary_font: "Playfair Display", serif;
 $primary_font: "Abel", sans-serif;
-/*----------------------------------- */
-/*------------ general -------------- */
+/* ----------------------------------------------------------------- */
+/* --------------------------- general ----------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
 h1 {
     font-family: $secondary_font;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 30px;
+    text-align: center;
+    color: $primary_black;
 }
-
 h2 {
     font-family: $secondary_font;
     font-size: 25px;
@@ -42,62 +42,61 @@ h3 {
     font-size: 20px;
     font-weight: 100;
 }
-
-h4 {
+/*h4 {
     font-family: $secondary_font;
     font-size: 15px;
     font-weight: 100;
 }
-
 h5 {
     font-family: $secondary_font;
     font-size: 12px;
     font-weight: 100;
-}
-
+}*/
 h6 {
     font-family: $secondary_font;
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 100;
+    padding: 10px;
+    color: $primary_black;
 }
-
-p {
+p,
+h4,
+h5 {
     font-family: $primary_font;
     font-size: 14px;
+    font-weight: normal;
 }
-
 .white_text {
     color: $primary_white;
 }
-
-section {
+.wrapper {
     padding: 20px 10%;
 }
-
 .line {
     height: 2px;
     background-color: $primary_gold;
+    margin: 15px 0;
 }
-
-button {
-    color: $primary_white;
-    cursor: pointer;
+button,
+.button {
     font-family: $primary_font;
-    font-size: 20px;
+    padding: 2px 0;
+    width: 120px;
+    margin: 10px auto;
+    cursor: pointer;
+    text-align: center;
 }
-
 .button_red {
     background-color: $primary_red;
-    border: none;
+    border: 1px solid $primary_red;
+    color: $primary_white;
 }
-
 .button_black {
     background-color: $primary_black;
     border: 1px solid $primary_white;
 }
-/*----------------------------------- */
-/*------------ header -------------- */
-
+/* ----------------------------------------------------------------- */
+/* --------------------------- header ------------------------------ */
 header {
     background-color: $primary_black;
     height: 10vh;
@@ -105,9 +104,8 @@ header {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 5%;
 }
-
 nav {
     background-color: $primary_black;
     position: absolute;
@@ -116,19 +114,16 @@ nav {
     width: 100%;
     z-index: 2;
 }
-
 .logo {
-    width: 120px;
+    width: 180px;
     float: right;
 }
-
 .fa-map-marker {
     color: $primary_white;
     padding-right: 4px;
 }
-
-/* ---------------------------- hamburger menu----------------------- */
-
+/* ----------------------------------------------------------------- */
+/* --------------------------- hamburger --------------------------- */
 #menu {
     width: 30px;
     height: 30px;
@@ -143,30 +138,25 @@ nav {
     border-radius: 5px;
     transition: 0.3s ease;
 }
-
 #bar1 {
     transform: translateY(-4px);
 }
 #bar3 {
     transform: translateY(4px);
 }
-
 .navigation_link {
     list-style: none;
     color: $primary_white;
-    font-size: 14px;
+    font-size: 20px;
 }
-
 .last_child {
     border: 1px solid $primary_red;
     padding: 5px;
     width: fit-content;
 }
-
 .nav_list li {
-    padding: 12px 0;
+    padding: 12px 12px 4px 12px;
 }
-
 .nav_list {
     padding: 0;
     margin: 0 15px 20px;
@@ -175,21 +165,15 @@ nav {
     font-family: $primary_font;
     font-size: 20px;
     list-style-type: none;
-    z-index: 2;
 }
-
 .sub_nav {
     display: none;
     list-style-type: none;
-    background-color: $primary_black;
+    background-color: $tone_darkgray;
 }
-
 .open_menu {
-    color: $primary_white;
     cursor: pointer;
-    font-size: 16px;
 }
-
 .change .bar {
     background-color: $primary_white;
 }
@@ -202,20 +186,20 @@ nav {
 .change #bar2 {
     opacity: 0;
 }
-
 .change {
     display: block;
 }
-
-/*----- Header End -----*/
-
-/*------- Main -------*/
-/*------- Index -------*/
+/* ----------------------------------------------------------------- */
+/* ----------------------------- index ----------------------------- */
+.index_about_section,
+.index_product_section,
+.index_guidance_section {
+    padding: 20px 10%;
+}
 
 .hero_video_section {
     height: 400px;
 }
-
 .content_wrapper {
     display: flex;
     flex-direction: column;
@@ -224,38 +208,31 @@ nav {
     z-index: 1;
     top: 20%;
 }
-
 .hero_section_button {
     margin: 15px;
     padding: 10px;
 }
-
 .index_about_section {
     background-color: $primary_black;
 }
-
 .index_about_line {
     width: 145px;
     position: relative;
     left: -10%;
     margin: 5px 0 15px 0;
 }
-
 .index_about_img {
     height: 250px;
     width: 100%;
     object-fit: cover;
 }
-
 .index_about_p {
     margin: 15px 0;
 }
-
 .index_about_button {
     padding: 5px;
+    color: $primary_white;
 }
-
-/*----- About grid -----*/
 .grid-container {
     background-color: $primary_black;
     display: grid;
@@ -270,59 +247,45 @@ nav {
         "p_area"
         "button_area";
 }
-
 .h2_area {
     grid-area: h2_area;
 }
-
 .line_area {
     grid-area: line_area;
 }
-
 .img_area {
     grid-area: img_area;
 }
-
 .p_area {
     grid-area: p_area;
 }
-
 .button_area {
     grid-area: button_area;
 }
-
-/*-----------------------*/
-
 .link_button {
     display: none;
 }
-
 .index_product_line {
     position: relative;
     left: -10%;
     margin: 10px 0 25px 0;
 }
-
 .product_article_wrapper {
     display: flex;
 }
-
 .product_article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .product_link {
     display: flex;
     justify-content: center;
 }
-
 .index_product_img {
     width: 80%;
 }
-
 .layer {
     background-color: $tone_lightgray;
     height: 65px;
@@ -332,73 +295,61 @@ nav {
     opacity: 0.5;
     margin-bottom: 25px;
 }
-
 .index_product_p {
     text-decoration: underline 1px solid $primary_gold;
 }
-
 .index_guidance_section {
     background-color: $tone_lightgray;
 }
-
 .index_guidance_line {
     position: relative;
     left: -10%;
     margin: 10px 0 35px 0;
 }
-
 .guidance_article_wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .index_guidance_article {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 45%;
 }
-
 .index_guidance_img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
-
 .index_guidance_p {
     margin: 15px 0;
 }
-
 .index_guidance_button {
     margin: 0 0 15px 0;
 }
-/*----- Index End -----*/
-/*----- Main End -----*/
 
-/*----- Forhandler start -----*/
+/* ----------------------------------------------------------------- */
+/* ----------------------------- Stores ---------------------------- */
 
-.find_vendor {
+.find_store {
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.vendor_h1 {
+.store_h1 {
     font-size: 20px;
     margin-top: 25px;
     text-align: center;
 }
 
-.vendor_line {
+.store_line {
     width: 150px;
     margin: 5px 0 25px 0;
 }
 
 #map {
-    width: 100%;
     height: 300px;
+    width: 100%;
 }
 
 .mapboxgl-popup-content {
@@ -424,16 +375,19 @@ nav {
 .mapboxgl-ctrl-bottom-right {
     display: none;
 }
-/*----- Forhandler slut -----*/
 
-/*----- Start Om Draupnir Danmark -----*/
-/*-- Om Draupnir -- */
+/* ----------------------------------------------------------------- */
+/* ------------------------- About Draupnir ------------------------ */
+
 .about {
     background-color: $primary_white;
+    padding: 20px 10% 50px 10%;
+    width: 100%;
 }
 
 .about_h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 .about_line {
@@ -468,6 +422,7 @@ nav {
 /*-- profilrytter -- */
 .about_profile_rider {
     background-color: $primary_black;
+    padding: 20px 10%;
 }
 
 .rider_wrapper {
@@ -518,6 +473,7 @@ nav {
 /*-- Øvrige ryttere -- */
 .about_talented_riders {
     background-color: $tone_lightgray;
+    padding: 20px 10%;
 }
 
 .talented_riders_h2 {
@@ -550,9 +506,9 @@ nav {
     position: relative;
     padding-top: 10px;
 }
-/*----- Slut Om Draupnir Danmark -----*/
 
-/*-------- Kontakt --------*/
+/* ----------------------------------------------------------------- */
+/* ----------------------------- Contact --------------------------- */
 .contact_section {
     padding: 0;
     width: 100%;
@@ -576,33 +532,382 @@ nav {
     width: 100%;
     height: 100%;
 }
-/*----- Kontakt Slut -----*/
-
-/*----------------*/
-
-/*----------------*/
-/*---- Footer ----*/
-
+/* ----------------------------------------------------------------- */
+/* --------------------------- products filter site ---------------- */
+.product_line1 {
+    width: 100%;
+    margin-top: 45px;
+}
+.product_line2 {
+    width: 100%;
+    margin-bottom: 45px;
+}
+.filterDiv {
+    float: left;
+    background-color: $tone_lightgray;
+    color: $primary_black;
+    width: 48%;
+    text-align: center;
+    margin: 1%;
+    height: 100%;
+    display: none;
+}
+.show {
+    display: block;
+}
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.btn {
+    border: 1px solid $tone_darkgray;
+    outline: none;
+    padding: 6px 0;
+    background-color: transparent;
+    color: $primary_black;
+    cursor: pointer;
+    width: 47%;
+    margin: 8px 1%;
+}
+.btn:hover {
+    background-color: $primary_gold;
+    color: $primary_white;
+    border: 1px solid $primary_gold;
+}
+.btn.active {
+    background-color: $primary_red;
+    border: 1px solid $primary_red;
+    color: $primary_white;
+}
+.products_filter_img {
+    width: 100%;
+    margin: 20px 0;
+}
+.products_filter_img2 {
+    width: 100%;
+    margin: 20px 0 38px 0;
+}
+.products_filter_btn {
+    border: 1px solid $tone_darkgray;
+    padding: 2px 0;
+    width: 80px;
+    margin: 10px auto;
+    font-weight: bold;
+    background-color: transparent;
+    color: $primary_black;
+}
+.products_filter_btn:hover {
+    background-color: $primary_gold;
+    color: $primary_white;
+    border: 1px solid $primary_gold;
+}
+/* ----------------------------------------------------------------- */
+/* --------------------------- product sites ----------------------- */
+.product_grid_products {
+    display: grid;
+    grid-template-columns: 5% 10% 70% 10% 5%;
+    grid-template-rows: 50px 360px 50px 1fr;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+}
+.grid_container_gold_arrow {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+}
+.grid_container_goback {
+    grid-row: 1;
+    grid-column: 2/5;
+}
+.grid_container_diasshow {
+    grid-row: 2;
+    grid-column: 1/6;
+    padding: 10%;
+    text-align: center;
+}
+.grid_container_product_text {
+    grid-row: 4;
+    grid-column: 1/6;
+    background-color: $tone_lightgray;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+.grid_container_dots {
+    grid-row: 3;
+    grid-column: 3;
+}
+.grid_container_arrow_prew {
+    grid-row: 3;
+    grid-column: 2;
+    text-align: right;
+}
+.grid_container_arrow_next {
+    grid-row: 3;
+    grid-column: 4;
+}
+.gold_arrow {
+    color: $primary_gold;
+    font-weight: bold;
+}
+.logo_secondary_black {
+    width: 100px;
+}
+.product_heading {
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+.price {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.price_text {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.slideshow-container {
+    text-align: center;
+}
+.mySlides {
+    display: flex;
+    display: none;
+    flex-direction: row;
+}
+.mySlides:first-child {
+    display: block;
+}
+.slide_img {
+    width: 100%;
+    border: 1px solid $primary_white;
+    max-width: 300px;
+}
+.slider_information {
+    padding-left: 7%;
+    padding-top: 12%;
+}
+.prev,
+.next {
+    cursor: pointer;
+    color: $primary_gold;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-size: cover;
+}
+.dot1 {
+    background-image: url(../img/products/sadelovertraek_2_orka_1.png);
+}
+.dot2 {
+    background-image: url(../img/products/sadelovertraek_2_orka_2.png);
+}
+.dot3 {
+    background-image: url(../img/products/gjord_1.1.png);
+}
+.dot4 {
+    background-image: url(../img/products/gjord_1.2.png);
+}
+.dot5 {
+    background-image: url(../img/products/gjord_1.3.png);
+}
+.dot6 {
+    background-image: url(../img/products/stigboejler_1.silber.png);
+}
+.dot7 {
+    background-image: url(../img/products/stigboejler_1.2_gold.png);
+}
+.dot8 {
+    background-image: url(../img/products/indspandingstojler_1.png);
+}
+.dot9 {
+    background-image: url(../img/products/longeringssaet_3.png);
+}
+.dot10 {
+    background-image: url(../img/products/longegjorde_2.png);
+}
+.dot11 {
+    background-image: url(../img/products/nakkestykke_orka_2.1.png);
+}
+.dot12 {
+    background-image: url(../img/products/nakkestykke_orka_2.2.png);
+}
+.dot13 {
+    background-image: url(../img/products/kombineret_næserem_swarovski_4.1.png);
+}
+.dot14 {
+    background-image: url(../img/products/kombineret_næserem_swarovski_4.2.png);
+}
+.dot15 {
+    background-image: url(../img/products/engelsk_naeserem_swarovski_3.1.png);
+}
+.dot16 {
+    background-image: url(../img/products/engelsk_naeserem_swarovski_3.2.png);
+}
+.dot17 {
+    background-image: url(../img/products/hannoveransk_næserem_swarovski_5.1.png);
+}
+.dot18 {
+    background-image: url(../img/products/hannoveransk_næserem_swarovski_5_.2.png);
+}
+.dot19 {
+    background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.1.png);
+}
+.dot20 {
+    background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.2.png);
+}
+.dot21 {
+    background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.3.png);
+}
+.dot22 {
+    background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.4.png);
+}
+.dot23 {
+    background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.5.png);
+}
+.dot24 {
+    background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.6.png);
+}
+.dot25 {
+    background-image: url(../img/products/pandeband_1.png);
+}
+.dot26 {
+    background-image: url(../img/products/pandeband_2.png);
+}
+.dot27 {
+    background-image: url(../img/products/pandeband_3.png);
+}
+.dot28 {
+    background-image: url(../img/products/pandeband_4.png);
+}
+.dot29 {
+    background-image: url(../img/saddles/orka_4.1.png);
+}
+.dot30 {
+    background-image: url(../img/saddles/orka_4.2.png);
+}
+.dot31 {
+    background-image: url(../img/saddles/ask_1.1.png);
+}
+.dot32 {
+    background-image: url(../img/saddles/ask_1.2.png);
+}
+.dot33 {
+    background-image: url(../img/saddles/ask_1.3.png);
+}
+.dot34 {
+    background-image: url(../img/saddles/embla_3.1.png);
+}
+.dot35 {
+    background-image: url(../img/saddles/embla_3.2.png);
+}
+.dot36 {
+    background-image: url(../img/saddles/embla_3.3.png);
+}
+.dot37 {
+    background-image: url(../img/saddles/elle_2.1.png);
+}
+.dot38 {
+    background-image: url(../img/saddles/elle_2.2.png);
+}
+.dot39 {
+    background-image: url(../img/saddles/elle_2.3.png);
+}
+.dot40 {
+    background-image: url(../img/saddles/elle_2.4.png);
+}
+.dot41 {
+    background-image: url(../img/saddles/smart_5.1.png);
+}
+.dot42 {
+    background-image: url(../img/saddles/smart_5.2.png);
+}
+.dot43 {
+    background-image: url(../img/saddles/sp_6.1.png);
+}
+.dot44 {
+    background-image: url(../img/saddles/sp_6.2.png);
+}
+.dot:active,
+.dot:hover {
+    filter: opacity(60%);
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.product_site_link {
+    color: $primary_red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.related_products {
+    background-color: $tone_darkgray;
+}
+.product_line3 {
+    width: 60%;
+    margin: 0 auto 40px auto;
+}
+/* ----------------------------------------------------------------- */
+/* --------------------------- footer ------------------------------ */
 footer {
     background-color: $primary_black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.address {
+    text-align: center;
+}
 .footer_h2 {
     margin: 5px 0 25px 0;
 }
-
 .copyright {
     font-size: 12px;
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 30px;
+    width: 80%;
 }
-
 .icon_section {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
 }
 .icon {
     height: 25px;
@@ -620,87 +925,55 @@ footer {
     align-items: center;
     margin: 12px;
 }
-
 .icon_anchor {
     height: 25px;
 }
-/*-------- Error page --------*/
-.error_page {
-    text-align: center;
-}
-
-.error_h1 {
-    padding-top: 200px;
-}
-
-.error_img {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 130%;
-}
-
-/* --- mediaquery ipad og tablets ----- */
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery tablet ------------------------ */
 @media screen and (min-width: 672px) and (max-width: 950px) {
+    /* ------------------------------------------------- */
+    /* --------------- general - tablet ---------------- */
     h1 {
-        font-size: 75px;
+        font-size: 45px;
     }
-
     h2 {
         font-size: 30px;
     }
-
     h3 {
         font-size: 25px;
     }
-
     h4 {
-        font-size: 20px;
-    }
-
-    h5 {
         font-size: 18px;
     }
-
+    h5 {
+        font-size: 14px;
+    }
     h6 {
         font-size: 16px;
     }
-
     p {
         font-size: 18px;
     }
-
-    /*----- Header -----*/
-
+    /* ------------------------------------------------- */
+    /* --------------- header - tablet ----------------- */
     .logo {
-        width: 180px;
+        width: 200px;
     }
-
     #menu {
         height: 45px;
         width: 45px;
     }
-
     .bar {
         height: 5px;
     }
-
     .change #bar1 {
         transform: translateY(6px) rotate(-45deg);
     }
     .change #bar3 {
         transform: translateY(-4px) rotate(45deg);
     }
-
-    .navigation_link {
-        font-size: 18px;
-    }
-
-    /*------ Header End ------*/
-
-    /*------- Main -------*/
-    /*------- Index -------*/
-
+    /* ------------------------------------------------- */
+    /* ---------------- index - tablet ----------------- */
     .index_about_line {
         width: 205px;
         left: -10%;
@@ -763,14 +1036,15 @@ footer {
         margin: 0 0 40px 0;
         padding: 2px 30px;
     }
-    /*----- Index End -----*/
-    /*----- Main End -----*/
 
-    .vendor_h1 {
+    /* ------------------------------------------------- */
+    /* ------------- Stores - tablet ------------------- */
+
+    .store_h1 {
         font-size: 30px;
     }
 
-    .vendor_line {
+    .store_line {
         width: 400px;
     }
 
@@ -782,7 +1056,8 @@ footer {
         font-size: 18px;
     }
 
-    /*-- Om Draupnir -- */
+    /* ------------------------------------------------- */
+    /* -------------- About Draupnir ------------------- */
 
     .about_line {
         width: 445px;
@@ -823,25 +1098,97 @@ footer {
     .talented_rider_img {
         width: 60%;
     }
-    /*----- Slut Om Draupnir Danmark -----*/
+    /* ------------------------------------------------- */
+    /* ----------------- Contact ----------------------- */
 
-    /*------ Footer ------*/
+    /* ------------------------------------------------- */
+    /* ------- product filter site - tablet ------------ */
+    .products_filter_btn {
+        width: 110px;
+    }
+    .filterDiv {
+        width: 31%;
+    }
+    .btn {
+        width: 22.5%;
+    }
+    .products_filter_img2 {
+        margin: 20px 0 43px 0;
+    }
+    #myBtnContainer {
+        text-align: center;
+    }
+    /* ------------------------------------------------- */
+    /* --------- product sites - tablet ---------------- */
+    .product_grid_products {
+        grid-template-columns: 5% 30% 30% 30% 5%;
+        grid-template-rows: 50px 360px 50px 1fr;
+    }
+    /*.product_grid_products{
+        grid-template-columns: 2% 13% 12% 13% 2% 58%;
+        grid-template-rows: 5% 70% 5% 20%;
+    }
+    .grid_container_gold_arrow{
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+    }
+    .grid_container_goback{
+        grid-row: 1;
+        grid-column: 2/5;
+    }
+    .grid_container_diasshow{
+        grid-row: 2/3;
+        grid-column: 1/6;
+        padding: 10% 10% 0 10%;
+    }
+    .grid_container_product_text{
+        grid-row: 1/5;
+        grid-column: 6;
+        background-color: $tone_lightgray;
+        text-align: center;
+        padding: 50px 10% 20px 20px;
+        height: 100%;
+    }
+    .grid_container_dots{
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .grid_container_arrow_prew{
+        grid-row: 3;
+        grid-column: 2;
+        text-align: right;
+    }
+    .grid_container_arrow_next{
+        grid-row: 3;
+        grid-column: 4;
+    }
+    .prev, .next{
+        font-size: 25px;
+        position: relative;
+    }
+    .slideshow-container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }*/
+    /* ------------------------------------------------- */
+    /* ---------------- footer - tablet ---------------- */
     .footer_h2 {
         margin: 5px 0 25px 0;
         font-size: 30px;
     }
-
     .copyright {
         font-size: 12px;
         text-align: center;
         margin-bottom: 5px;
     }
-
     .icon_section {
         display: flex;
         flex-direction: row;
+        margin-top: 0px;
     }
-
     .icon_background {
         background-color: $primary_red;
         height: 35px;
@@ -852,94 +1199,101 @@ footer {
         align-items: center;
         margin: 12px;
     }
-}
-
-/*----- Footer End -----*/
-
-/* ------ mediaquery desktop ---------- */
-@media screen and(min-width: 951px) {
-    h1 {
-        font-family: $secondary_font;
-        font-weight: 700;
-        font-size: 90px;
+    .flex_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
     }
-
-    h2 {
-        font-family: $secondary_font;
+    .address {
+        text-align: left;
+    }
+}
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery desktop ----------------------- */
+@media screen and(min-width: 951px) {
+    /* ------------------------------------------------- */
+    /* ---------------- general - desktop -------------- */
+    h1 {
         font-size: 50px;
     }
-
+    h2 {
+        font-size: 50px;
+    }
     h3 {
-        font-family: $secondary_font;
         font-size: 40px;
     }
-
     h4 {
-        font-family: $secondary_font;
-        font-size: 30px;
+        font-size: 18px;
     }
-
     h5 {
-        font-family: $secondary_font;
-        font-size: 25px;
+        font-size: 14px;
     }
-
     h6 {
-        font-family: $secondary_font;
         font-size: 16px;
     }
-
     p {
-        font-family: $primary_font;
-        font-size: 20px;
+        font-size: 18px;
     }
-
-    /*----- Header -----*/
-
+    /* ------------------------------------------------- */
+    /* ---------------- header - desktop --------------- */
     header {
         flex-direction: row;
     }
-
     nav {
-        width: 100%;
+        width: 1000px;
         position: static;
         display: flex;
         justify-content: flex-end;
     }
-
     .nav_list {
-        width: 60%;
+        width: 96%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin: 0;
     }
-
+    .nav_list li {
+        padding: 12px 4px 4px 4px;
+    }
+    .nav_list li:hover {
+        border-bottom: 1px solid $primary_gold;
+    }
+    .nav_list li:last-child:hover {
+        border-bottom: none;
+    }
     .sub_nav {
         position: absolute;
         padding: 0 15px;
+        margin-top: 8px;
     }
-
+    .sub_nav li:hover {
+        border-bottom: 1px solid $primary_gold !important;
+    }
+    .sub_nav:last-child {
+        padding-bottom: 12px;
+    }
     .navigation_link {
         padding: 0;
     }
-
     .last_child {
         padding: 5px 10px;
     }
-
-    .logo {
-        width: 200px;
-        float: left;
+    .last_child:hover {
+        border: 1px solid $primary_red;
+        background-color: $primary_red;
     }
-
+    .logo {
+        width: 230px;
+        float: left;
+        margin-top: 10px;
+    }
     #menu {
         display: none;
     }
-
-    /*------- Main -------*/
-    /*------- Index -------*/
-
+    /* ------------------------------------------------- */
+    /* ----------- index - desktop -------------------- */
     .hero_video_section {
         height: 600px;
         display: flex;
@@ -954,8 +1308,9 @@ footer {
     .hero_section_button {
         margin: 70px;
         padding: 2px 30px;
+        font-size: 20px;
+        width: 175px;
     }
-    /*---------*/
 
     .index_about_section {
         display: flex;
@@ -973,11 +1328,9 @@ footer {
         padding: 5px;
         width: 150px;
         height: 50px;
-        margin-top: 40px 0 1px 0;
+        margin: 40px 0 1px 0;
     }
-    /*---------*/
 
-    /*----- About grid -----*/
     .grid-container {
         background-color: $primary_black;
         display: grid;
@@ -991,6 +1344,25 @@ footer {
             "img_area line_area"
             "img_area p_area"
             "img_area button_area";
+    }
+    .h2_area {
+        grid-area: h2_area;
+    }
+
+    .line_area {
+        grid-area: line_area;
+    }
+
+    .img_area {
+        grid-area: img_area;
+    }
+
+    .p_area {
+        grid-area: p_area;
+    }
+
+    .button_area {
+        grid-area: button_area;
     }
 
     .img_area {
@@ -1011,7 +1383,6 @@ footer {
         align-items: flex-end;
     }
 
-    /*-----------------------*/
     .index_product_section {
         height: 700px;
         padding-top: 50px;
@@ -1027,6 +1398,7 @@ footer {
         background-color: transparent;
         font-size: 0;
         padding: 2px 30px;
+        width: 125px;
     }
 
     .product_link {
@@ -1052,7 +1424,7 @@ footer {
     .index_product_p {
         margin-bottom: 50px;
     }
-    /*---------*/
+
     .index_guidance_section {
         background-color: $tone_lightgray;
         height: 550px;
@@ -1100,14 +1472,16 @@ footer {
         font-size: 0;
         background-color: transparent;
         padding: 2px 30px;
+        border: 0;
+        width: 135px;
     }
-    /*----- Index End -----*/
-    /*----- Main End -----*/
-    .vendor_h1 {
+    /* ------------------------------------------------- */
+    /* ---------------- Store - desktop ---------------- */
+    .store_h1 {
         font-size: 50px;
     }
 
-    .vendor_line {
+    .store_line {
         width: 400px;
     }
     #map {
@@ -1118,29 +1492,61 @@ footer {
         font-size: 20px;
     }
 
-    /*-- Om Draupnir -- */
+    /* ------------------------------------------------- */
+    /* --------- product filter site - desktop --------- */
+    .products_filter_btn {
+        width: 110px;
+    }
+    .filterDiv {
+        width: 23%;
+    }
+    .btn {
+        width: 11.9%;
+    }
+    .products_filter_img2 {
+        margin: 20px 0 38px 0;
+    }
+    #myBtnContainer {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ------------------------------------------------- */
+    /* -------------- About Draupnir ------------------- */
     .about {
         height: 100%;
+        width: 100%;
+        padding: 20px 15%;
+    }
+
+    .about_h1 {
+        font-size: 65px;
     }
 
     .about_line {
-        display: flex;
-        margin: 5px auto 25px auto;
-        width: 96%;
-        margin-left: -10%;
+        position: relative;
+        left: -20%;
+        width: 120%;
     }
 
+    .about_wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .about_wrapper p {
+        width: 48%;
+    }
     .about_text_wrapper {
-        width: 100%;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .about_img {
-        width: 536px;
-        height: 300px;
+        width: 48%;
+        height: 530px;
         object-fit: cover;
-        margin: 10px;
-        float: right;
         border: 1px solid $primary_black;
     }
 
@@ -1215,9 +1621,8 @@ footer {
         bottom: 10px;
         padding-bottom: 30px;
     }
-    /*----- Slut Om Draupnir Danmark -----*/
-
-    /*-------- Kontakt --------*/
+    /* ------------------------------------------------- */
+    /* ------------------ Contact ---------------------- */
     .contact_section {
         padding: 0;
         width: 100%;
@@ -1241,5 +1646,70 @@ footer {
         height: 100%;
         object-fit: cover;
     }
-    /*----- Kontakt Slut -----*/
+    /* ------------------------------------------------- */
+    /* ---------- product sites - desktop -------------- */
+    .product_grid_products {
+        grid-template-columns: 2% 11% 16% 11% 2% 58%;
+        grid-template-rows: 50px 70% 50px 1fr;
+    }
+    .grid_container_gold_arrow {
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+    }
+    .grid_container_goback {
+        grid-row: 1;
+        grid-column: 2/5;
+    }
+    .grid_container_diasshow {
+        grid-row: 2/3;
+        grid-column: 1/6;
+    }
+    .grid_container_product_text {
+        grid-row: 1/5;
+        grid-column: 6;
+        background-color: $tone_lightgray;
+        text-align: center;
+        padding: 50px 10% 20px 20px;
+        height: 100%;
+    }
+    .grid_container_dots {
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .grid_container_arrow_prew {
+        grid-row: 3;
+        grid-column: 2;
+        text-align: right;
+    }
+    .grid_container_arrow_next {
+        grid-row: 3;
+        grid-column: 4;
+    }
+    .prev,
+    .next {
+        font-size: 25px;
+        position: relative;
+    }
+    .logo_secondary_black {
+        width: 150px;
+    }
+    .slide_img {
+        max-width: 600px;
+    }
+    /* ------------------------------------------------- */
+    /* ----------------- footer - desktop -------------- */
+    .flex_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+    .icon_section {
+        margin-top: 0px;
+    }
+    .address {
+        text-align: left;
+    }
 }

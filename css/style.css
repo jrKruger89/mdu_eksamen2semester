@@ -1,11 +1,11 @@
 @charset "UTF-8";
-/*---------- Sass Variabler --------- */
+/*---------- Sass Variabler ---------------------------------------- */
 /*---- */
 /*---- */
-/*----------------------------------- */
-/*------------ fonts -------------- */
-/*----------------------------------- */
-/*------------ general -------------- */
+/* ----------------------------------------------------------------- */
+/* --------------------------- fonts ------------------------------- */
+/* ----------------------------------------------------------------- */
+/* --------------------------- general ----------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,9 @@
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
+  text-align: center;
+  color: #252525;
 }
 
 h2 {
@@ -32,52 +34,60 @@ h3 {
   font-weight: 100;
 }
 
-h4 {
-  font-family: "Playfair Display", serif;
-  font-size: 15px;
-  font-weight: 100;
+/*h4 {
+    font-family: $secondary_font;
+    font-size: 15px;
+    font-weight: 100;
 }
-
 h5 {
-  font-family: "Playfair Display", serif;
-  font-size: 12px;
-  font-weight: 100;
-}
-
+    font-family: $secondary_font;
+    font-size: 12px;
+    font-weight: 100;
+}*/
 h6 {
   font-family: "Playfair Display", serif;
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 100;
+  padding: 10px;
+  color: #252525;
 }
 
-p {
+p,
+h4,
+h5 {
   font-family: "Abel", sans-serif;
   font-size: 14px;
+  font-weight: normal;
 }
 
 .white_text {
   color: #ffffff;
 }
 
-section {
+.wrapper {
   padding: 20px 10%;
 }
 
 .line {
   height: 2px;
   background-color: #cda46b;
+  margin: 15px 0;
 }
 
-button {
-  color: #ffffff;
-  cursor: pointer;
+button,
+.button {
   font-family: "Abel", sans-serif;
-  font-size: 20px;
+  padding: 2px 0;
+  width: 120px;
+  margin: 10px auto;
+  cursor: pointer;
+  text-align: center;
 }
 
 .button_red {
   background-color: #af0404;
-  border: none;
+  border: 1px solid #af0404;
+  color: #ffffff;
 }
 
 .button_black {
@@ -85,8 +95,8 @@ button {
   border: 1px solid #ffffff;
 }
 
-/*----------------------------------- */
-/*------------ header -------------- */
+/* ----------------------------------------------------------------- */
+/* --------------------------- header ------------------------------ */
 header {
   background-color: #252525;
   height: 10vh;
@@ -103,7 +113,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px;
+  padding: 0 5%;
 }
 
 nav {
@@ -116,7 +126,7 @@ nav {
 }
 
 .logo {
-  width: 120px;
+  width: 180px;
   float: right;
 }
 
@@ -125,7 +135,8 @@ nav {
   padding-right: 4px;
 }
 
-/* ---------------------------- hamburger menu----------------------- */
+/* ----------------------------------------------------------------- */
+/* --------------------------- hamburger --------------------------- */
 #menu {
   width: 30px;
   height: 30px;
@@ -156,7 +167,7 @@ nav {
 .navigation_link {
   list-style: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .last_child {
@@ -168,7 +179,7 @@ nav {
 }
 
 .nav_list li {
-  padding: 12px 0;
+  padding: 12px 12px 4px 12px;
 }
 
 .nav_list {
@@ -180,19 +191,16 @@ nav {
   font-family: "Abel", sans-serif;
   font-size: 20px;
   list-style-type: none;
-  z-index: 2;
 }
 
 .sub_nav {
   display: none;
   list-style-type: none;
-  background-color: #252525;
+  background-color: #414141;
 }
 
 .open_menu {
-  color: #ffffff;
   cursor: pointer;
-  font-size: 16px;
 }
 
 .change .bar {
@@ -217,9 +225,14 @@ nav {
   display: block;
 }
 
-/*----- Header End -----*/
-/*------- Main -------*/
-/*------- Index -------*/
+/* ----------------------------------------------------------------- */
+/* ----------------------------- index ----------------------------- */
+.index_about_section,
+.index_product_section,
+.index_guidance_section {
+  padding: 20px 10%;
+}
+
 .hero_video_section {
   height: 400px;
 }
@@ -269,9 +282,9 @@ nav {
 
 .index_about_button {
   padding: 5px;
+  color: #ffffff;
 }
 
-/*----- About grid -----*/
 .grid-container {
   background-color: #252525;
   display: -ms-grid;
@@ -315,7 +328,6 @@ nav {
   grid-area: button_area;
 }
 
-/*-----------------------*/
 .link_button {
   display: none;
 }
@@ -426,37 +438,26 @@ nav {
   margin: 0 0 15px 0;
 }
 
-/*----- Index End -----*/
-/*----- Main End -----*/
-/*----- Forhandler start -----*/
-.find_vendor {
+/* ----------------------------------------------------------------- */
+/* ----------------------------- Stores ---------------------------- */
+.find_store {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.vendor_h1 {
+.store_h1 {
   font-size: 20px;
   margin-top: 25px;
   text-align: center;
 }
 
-.vendor_line {
+.store_line {
   width: 150px;
   margin: 5px 0 25px 0;
 }
 
 #map {
-  width: 100%;
   height: 300px;
+  width: 100%;
 }
 
 .mapboxgl-popup-content {
@@ -483,15 +484,17 @@ nav {
   display: none;
 }
 
-/*----- Forhandler slut -----*/
-/*----- Start Om Draupnir Danmark -----*/
-/*-- Om Draupnir -- */
+/* ----------------------------------------------------------------- */
+/* ------------------------- About Draupnir ------------------------ */
 .about {
   background-color: #ffffff;
+  padding: 20px 10% 50px 10%;
+  width: 100%;
 }
 
 .about_h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 .about_line {
@@ -527,6 +530,7 @@ nav {
 /*-- profilrytter -- */
 .about_profile_rider {
   background-color: #252525;
+  padding: 20px 10%;
 }
 
 .rider_wrapper {
@@ -593,6 +597,7 @@ nav {
 /*-- Øvrige ryttere -- */
 .about_talented_riders {
   background-color: #ededed;
+  padding: 20px 10%;
 }
 
 .talented_riders_h2 {
@@ -634,8 +639,8 @@ nav {
   padding-top: 10px;
 }
 
-/*----- Slut Om Draupnir Danmark -----*/
-/*-------- Kontakt --------*/
+/* ----------------------------------------------------------------- */
+/* ----------------------------- Contact --------------------------- */
 .contact_section {
   padding: 0;
   width: 100%;
@@ -667,10 +672,477 @@ nav {
   height: 100%;
 }
 
-/*----- Kontakt Slut -----*/
-/*----------------*/
-/*----------------*/
-/*---- Footer ----*/
+/* ----------------------------------------------------------------- */
+/* --------------------------- products filter site ---------------- */
+.product_line1 {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.product_line2 {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #ededed;
+  color: #252525;
+  width: 48%;
+  text-align: center;
+  margin: 1%;
+  height: 100%;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.btn {
+  border: 1px solid #414141;
+  outline: none;
+  padding: 6px 0;
+  background-color: transparent;
+  color: #252525;
+  cursor: pointer;
+  width: 47%;
+  margin: 8px 1%;
+}
+
+.btn:hover {
+  background-color: #cda46b;
+  color: #ffffff;
+  border: 1px solid #cda46b;
+}
+
+.btn.active {
+  background-color: #af0404;
+  border: 1px solid #af0404;
+  color: #ffffff;
+}
+
+.products_filter_img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.products_filter_img2 {
+  width: 100%;
+  margin: 20px 0 38px 0;
+}
+
+.products_filter_btn {
+  border: 1px solid #414141;
+  padding: 2px 0;
+  width: 80px;
+  margin: 10px auto;
+  font-weight: bold;
+  background-color: transparent;
+  color: #252525;
+}
+
+.products_filter_btn:hover {
+  background-color: #cda46b;
+  color: #ffffff;
+  border: 1px solid #cda46b;
+}
+
+/* ----------------------------------------------------------------- */
+/* --------------------------- product sites ----------------------- */
+.product_grid_products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 10% 70% 10% 5%;
+      grid-template-columns: 5% 10% 70% 10% 5%;
+  -ms-grid-rows: 50px 360px 50px 1fr;
+      grid-template-rows: 50px 360px 50px 1fr;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid_container_gold_arrow {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  text-align: center;
+}
+
+.grid_container_goback {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+
+.grid_container_diasshow {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  padding: 10%;
+  text-align: center;
+}
+
+.grid_container_product_text {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  background-color: #ededed;
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.grid_container_dots {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.grid_container_arrow_prew {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  text-align: right;
+}
+
+.grid_container_arrow_next {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.gold_arrow {
+  color: #cda46b;
+  font-weight: bold;
+}
+
+.logo_secondary_black {
+  width: 100px;
+}
+
+.product_heading {
+  margin: 10px auto 20px auto;
+  text-align: center;
+}
+
+.price {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.price_text {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.slideshow-container {
+  text-align: center;
+}
+
+.mySlides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mySlides:first-child {
+  display: block;
+}
+
+.slide_img {
+  width: 100%;
+  border: 1px solid #ffffff;
+  max-width: 300px;
+}
+
+.slider_information {
+  padding-left: 7%;
+  padding-top: 12%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: #cda46b;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  background-size: cover;
+}
+
+.dot1 {
+  background-image: url(../img/products/sadelovertraek_2_orka_1.png);
+}
+
+.dot2 {
+  background-image: url(../img/products/sadelovertraek_2_orka_2.png);
+}
+
+.dot3 {
+  background-image: url(../img/products/gjord_1.1.png);
+}
+
+.dot4 {
+  background-image: url(../img/products/gjord_1.2.png);
+}
+
+.dot5 {
+  background-image: url(../img/products/gjord_1.3.png);
+}
+
+.dot6 {
+  background-image: url(../img/products/stigboejler_1.silber.png);
+}
+
+.dot7 {
+  background-image: url(../img/products/stigboejler_1.2_gold.png);
+}
+
+.dot8 {
+  background-image: url(../img/products/indspandingstojler_1.png);
+}
+
+.dot9 {
+  background-image: url(../img/products/longeringssaet_3.png);
+}
+
+.dot10 {
+  background-image: url(../img/products/longegjorde_2.png);
+}
+
+.dot11 {
+  background-image: url(../img/products/nakkestykke_orka_2.1.png);
+}
+
+.dot12 {
+  background-image: url(../img/products/nakkestykke_orka_2.2.png);
+}
+
+.dot13 {
+  background-image: url(../img/products/kombineret_næserem_swarovski_4.1.png);
+}
+
+.dot14 {
+  background-image: url(../img/products/kombineret_næserem_swarovski_4.2.png);
+}
+
+.dot15 {
+  background-image: url(../img/products/engelsk_naeserem_swarovski_3.1.png);
+}
+
+.dot16 {
+  background-image: url(../img/products/engelsk_naeserem_swarovski_3.2.png);
+}
+
+.dot17 {
+  background-image: url(../img/products/hannoveransk_næserem_swarovski_5.1.png);
+}
+
+.dot18 {
+  background-image: url(../img/products/hannoveransk_næserem_swarovski_5_.2.png);
+}
+
+.dot19 {
+  background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.1.png);
+}
+
+.dot20 {
+  background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.2.png);
+}
+
+.dot21 {
+  background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.3.png);
+}
+
+.dot22 {
+  background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.4.png);
+}
+
+.dot23 {
+  background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.5.png);
+}
+
+.dot24 {
+  background-image: url(../img/products/naesestykke_til_justerbar_næsebånd_15.6.png);
+}
+
+.dot25 {
+  background-image: url(../img/products/pandeband_1.png);
+}
+
+.dot26 {
+  background-image: url(../img/products/pandeband_2.png);
+}
+
+.dot27 {
+  background-image: url(../img/products/pandeband_3.png);
+}
+
+.dot28 {
+  background-image: url(../img/products/pandeband_4.png);
+}
+
+.dot29 {
+  background-image: url(../img/saddles/orka_4.1.png);
+}
+
+.dot30 {
+  background-image: url(../img/saddles/orka_4.2.png);
+}
+
+.dot31 {
+  background-image: url(../img/saddles/ask_1.1.png);
+}
+
+.dot32 {
+  background-image: url(../img/saddles/ask_1.2.png);
+}
+
+.dot33 {
+  background-image: url(../img/saddles/ask_1.3.png);
+}
+
+.dot34 {
+  background-image: url(../img/saddles/embla_3.1.png);
+}
+
+.dot35 {
+  background-image: url(../img/saddles/embla_3.2.png);
+}
+
+.dot36 {
+  background-image: url(../img/saddles/embla_3.3.png);
+}
+
+.dot37 {
+  background-image: url(../img/saddles/elle_2.1.png);
+}
+
+.dot38 {
+  background-image: url(../img/saddles/elle_2.2.png);
+}
+
+.dot39 {
+  background-image: url(../img/saddles/elle_2.3.png);
+}
+
+.dot40 {
+  background-image: url(../img/saddles/elle_2.4.png);
+}
+
+.dot41 {
+  background-image: url(../img/saddles/smart_5.1.png);
+}
+
+.dot42 {
+  background-image: url(../img/saddles/smart_5.2.png);
+}
+
+.dot43 {
+  background-image: url(../img/saddles/sp_6.1.png);
+}
+
+.dot44 {
+  background-image: url(../img/saddles/sp_6.2.png);
+}
+
+.dot:active,
+.dot:hover {
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.product_site_link {
+  color: #af0404;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.related_products {
+  background-color: #414141;
+}
+
+.product_line3 {
+  width: 60%;
+  margin: 0 auto 40px auto;
+}
+
+/* ----------------------------------------------------------------- */
+/* --------------------------- footer ------------------------------ */
 footer {
   background-color: #252525;
   display: -webkit-box;
@@ -685,6 +1157,10 @@ footer {
           align-items: center;
 }
 
+.address {
+  text-align: center;
+}
+
 .footer_h2 {
   margin: 5px 0 25px 0;
 }
@@ -693,6 +1169,8 @@ footer {
   font-size: 12px;
   text-align: center;
   margin-bottom: 5px;
+  margin-top: 30px;
+  width: 80%;
 }
 
 .icon_section {
@@ -703,6 +1181,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 30px;
 }
 
 .icon {
@@ -733,26 +1212,13 @@ footer {
   height: 25px;
 }
 
-/*-------- Error page --------*/
-.error_page {
-  text-align: center;
-}
-
-.error_h1 {
-  padding-top: 200px;
-}
-
-.error_img {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 130%;
-}
-
-/* --- mediaquery ipad og tablets ----- */
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery tablet ------------------------ */
 @media screen and (min-width: 672px) and (max-width: 950px) {
+  /* ------------------------------------------------- */
+  /* --------------- general - tablet ---------------- */
   h1 {
-    font-size: 75px;
+    font-size: 45px;
   }
   h2 {
     font-size: 30px;
@@ -761,10 +1227,10 @@ footer {
     font-size: 25px;
   }
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   h5 {
-    font-size: 18px;
+    font-size: 14px;
   }
   h6 {
     font-size: 16px;
@@ -772,9 +1238,10 @@ footer {
   p {
     font-size: 18px;
   }
-  /*----- Header -----*/
+  /* ------------------------------------------------- */
+  /* --------------- header - tablet ----------------- */
   .logo {
-    width: 180px;
+    width: 200px;
   }
   #menu {
     height: 45px;
@@ -791,12 +1258,8 @@ footer {
     -webkit-transform: translateY(-4px) rotate(45deg);
             transform: translateY(-4px) rotate(45deg);
   }
-  .navigation_link {
-    font-size: 18px;
-  }
-  /*------ Header End ------*/
-  /*------- Main -------*/
-  /*------- Index -------*/
+  /* ------------------------------------------------- */
+  /* ---------------- index - tablet ----------------- */
   .index_about_line {
     width: 205px;
     left: -10%;
@@ -856,12 +1319,12 @@ footer {
     margin: 0 0 40px 0;
     padding: 2px 30px;
   }
-  /*----- Index End -----*/
-  /*----- Main End -----*/
-  .vendor_h1 {
+  /* ------------------------------------------------- */
+  /* ------------- Stores - tablet ------------------- */
+  .store_h1 {
     font-size: 30px;
   }
-  .vendor_line {
+  .store_line {
     width: 400px;
   }
   #map {
@@ -870,7 +1333,8 @@ footer {
   .mapboxgl-popup-content a {
     font-size: 18px;
   }
-  /*-- Om Draupnir -- */
+  /* ------------------------------------------------- */
+  /* -------------- About Draupnir ------------------- */
   .about_line {
     width: 445px;
   }
@@ -901,8 +1365,84 @@ footer {
   .talented_rider_img {
     width: 60%;
   }
-  /*----- Slut Om Draupnir Danmark -----*/
-  /*------ Footer ------*/
+  /* ------------------------------------------------- */
+  /* ----------------- Contact ----------------------- */
+  /* ------------------------------------------------- */
+  /* ------- product filter site - tablet ------------ */
+  .products_filter_btn {
+    width: 110px;
+  }
+  .filterDiv {
+    width: 31%;
+  }
+  .btn {
+    width: 22.5%;
+  }
+  .products_filter_img2 {
+    margin: 20px 0 43px 0;
+  }
+  #myBtnContainer {
+    text-align: center;
+  }
+  /* ------------------------------------------------- */
+  /* --------- product sites - tablet ---------------- */
+  .product_grid_products {
+    -ms-grid-columns: 5% 30% 30% 30% 5%;
+        grid-template-columns: 5% 30% 30% 30% 5%;
+    -ms-grid-rows: 50px 360px 50px 1fr;
+        grid-template-rows: 50px 360px 50px 1fr;
+  }
+  /*.product_grid_products{
+        grid-template-columns: 2% 13% 12% 13% 2% 58%;
+        grid-template-rows: 5% 70% 5% 20%;
+    }
+    .grid_container_gold_arrow{
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+    }
+    .grid_container_goback{
+        grid-row: 1;
+        grid-column: 2/5;
+    }
+    .grid_container_diasshow{
+        grid-row: 2/3;
+        grid-column: 1/6;
+        padding: 10% 10% 0 10%;
+    }
+    .grid_container_product_text{
+        grid-row: 1/5;
+        grid-column: 6;
+        background-color: $tone_lightgray;
+        text-align: center;
+        padding: 50px 10% 20px 20px;
+        height: 100%;
+    }
+    .grid_container_dots{
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .grid_container_arrow_prew{
+        grid-row: 3;
+        grid-column: 2;
+        text-align: right;
+    }
+    .grid_container_arrow_next{
+        grid-row: 3;
+        grid-column: 4;
+    }
+    .prev, .next{
+        font-size: 25px;
+        position: relative;
+    }
+    .slideshow-container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }*/
+  /* ------------------------------------------------- */
+  /* ---------------- footer - tablet ---------------- */
   .footer_h2 {
     margin: 5px 0 25px 0;
     font-size: 30px;
@@ -920,6 +1460,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 0px;
   }
   .icon_background {
     background-color: #af0404;
@@ -937,41 +1478,54 @@ footer {
             align-items: center;
     margin: 12px;
   }
+  .flex_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 100%;
+  }
+  .address {
+    text-align: left;
+  }
 }
 
-/*----- Footer End -----*/
-/* ------ mediaquery desktop ---------- */
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery desktop ----------------------- */
 @media screen and (min-width: 951px) {
+  /* ------------------------------------------------- */
+  /* ---------------- general - desktop -------------- */
   h1 {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    font-size: 90px;
+    font-size: 50px;
   }
   h2 {
-    font-family: "Playfair Display", serif;
     font-size: 50px;
   }
   h3 {
-    font-family: "Playfair Display", serif;
     font-size: 40px;
   }
   h4 {
-    font-family: "Playfair Display", serif;
-    font-size: 30px;
+    font-size: 18px;
   }
   h5 {
-    font-family: "Playfair Display", serif;
-    font-size: 25px;
+    font-size: 14px;
   }
   h6 {
-    font-family: "Playfair Display", serif;
     font-size: 16px;
   }
   p {
-    font-family: "Abel", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
-  /*----- Header -----*/
+  /* ------------------------------------------------- */
+  /* ---------------- header - desktop --------------- */
   header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -979,7 +1533,7 @@ footer {
             flex-direction: row;
   }
   nav {
-    width: 100%;
+    width: 1000px;
     position: static;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -989,20 +1543,37 @@ footer {
             justify-content: flex-end;
   }
   .nav_list {
-    width: 60%;
+    width: 96%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
   }
+  .nav_list li {
+    padding: 12px 4px 4px 4px;
+  }
+  .nav_list li:hover {
+    border-bottom: 1px solid #cda46b;
+  }
+  .nav_list li:last-child:hover {
+    border-bottom: none;
+  }
   .sub_nav {
     position: absolute;
     padding: 0 15px;
+    margin-top: 8px;
+  }
+  .sub_nav li:hover {
+    border-bottom: 1px solid #cda46b !important;
+  }
+  .sub_nav:last-child {
+    padding-bottom: 12px;
   }
   .navigation_link {
     padding: 0;
@@ -1010,15 +1581,20 @@ footer {
   .last_child {
     padding: 5px 10px;
   }
+  .last_child:hover {
+    border: 1px solid #af0404;
+    background-color: #af0404;
+  }
   .logo {
-    width: 200px;
+    width: 230px;
     float: left;
+    margin-top: 10px;
   }
   #menu {
     display: none;
   }
-  /*------- Main -------*/
-  /*------- Index -------*/
+  /* ------------------------------------------------- */
+  /* ----------- index - desktop -------------------- */
   .hero_video_section {
     height: 600px;
     display: -webkit-box;
@@ -1037,8 +1613,9 @@ footer {
   .hero_section_button {
     margin: 70px;
     padding: 2px 30px;
+    font-size: 20px;
+    width: 175px;
   }
-  /*---------*/
   .index_about_section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1059,10 +1636,8 @@ footer {
     padding: 5px;
     width: 150px;
     height: 50px;
-    margin-top: 40px 0 1px 0;
+    margin: 40px 0 1px 0;
   }
-  /*---------*/
-  /*----- About grid -----*/
   .grid-container {
     background-color: #252525;
     display: -ms-grid;
@@ -1074,6 +1649,32 @@ footer {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
         grid-template-areas: "img_area h2_area" "img_area line_area" "img_area p_area" "img_area button_area";
+  }
+  .h2_area {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: h2_area;
+  }
+  .line_area {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: line_area;
+  }
+  .img_area {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    grid-area: img_area;
+  }
+  .p_area {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: p_area;
+  }
+  .button_area {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: button_area;
   }
   .img_area {
     display: -webkit-box;
@@ -1097,7 +1698,6 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  /*-----------------------*/
   .index_product_section {
     height: 700px;
     padding-top: 50px;
@@ -1113,6 +1713,7 @@ footer {
     background-color: transparent;
     font-size: 0;
     padding: 2px 30px;
+    width: 125px;
   }
   .product_link {
     pointer-events: none;
@@ -1135,7 +1736,6 @@ footer {
   .index_product_p {
     margin-bottom: 50px;
   }
-  /*---------*/
   .index_guidance_section {
     background-color: #ededed;
     height: 550px;
@@ -1191,13 +1791,15 @@ footer {
     font-size: 0;
     background-color: transparent;
     padding: 2px 30px;
+    border: 0;
+    width: 135px;
   }
-  /*----- Index End -----*/
-  /*----- Main End -----*/
-  .vendor_h1 {
+  /* ------------------------------------------------- */
+  /* ---------------- Store - desktop ---------------- */
+  .store_h1 {
     font-size: 50px;
   }
-  .vendor_line {
+  .store_line {
     width: 400px;
   }
   #map {
@@ -1206,29 +1808,63 @@ footer {
   .mapboxgl-popup-content a {
     font-size: 20px;
   }
-  /*-- Om Draupnir -- */
+  /* ------------------------------------------------- */
+  /* --------- product filter site - desktop --------- */
+  .products_filter_btn {
+    width: 110px;
+  }
+  .filterDiv {
+    width: 23%;
+  }
+  .btn {
+    width: 11.9%;
+  }
+  .products_filter_img2 {
+    margin: 20px 0 38px 0;
+  }
+  #myBtnContainer {
+    width: 100%;
+    text-align: center;
+  }
+  /* ------------------------------------------------- */
+  /* -------------- About Draupnir ------------------- */
   .about {
     height: 100%;
+    width: 100%;
+    padding: 20px 15%;
+  }
+  .about_h1 {
+    font-size: 65px;
   }
   .about_line {
+    position: relative;
+    left: -20%;
+    width: 120%;
+  }
+  .about_wrapper {
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 5px auto 25px auto;
-    width: 96%;
-    margin-left: -10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about_wrapper p {
+    width: 48%;
   }
   .about_text_wrapper {
-    width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
   .about_img {
-    width: 536px;
-    height: 300px;
+    width: 48%;
+    height: 530px;
     -o-object-fit: cover;
        object-fit: cover;
-    margin: 10px;
-    float: right;
     border: 1px solid #252525;
   }
   .open {
@@ -1300,8 +1936,8 @@ footer {
     bottom: 10px;
     padding-bottom: 30px;
   }
-  /*----- Slut Om Draupnir Danmark -----*/
-  /*-------- Kontakt --------*/
+  /* ------------------------------------------------- */
+  /* ------------------ Contact ---------------------- */
   .contact_section {
     padding: 0;
     width: 100%;
@@ -1323,6 +1959,99 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  /*----- Kontakt Slut -----*/
+  /* ------------------------------------------------- */
+  /* ---------- product sites - desktop -------------- */
+  .product_grid_products {
+    -ms-grid-columns: 2% 11% 16% 11% 2% 58%;
+        grid-template-columns: 2% 11% 16% 11% 2% 58%;
+    -ms-grid-rows: 50px 70% 50px 1fr;
+        grid-template-rows: 50px 70% 50px 1fr;
+  }
+  .grid_container_gold_arrow {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    text-align: center;
+  }
+  .grid_container_goback {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+  }
+  .grid_container_diasshow {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+  }
+  .grid_container_product_text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+    -ms-grid-column: 6;
+    grid-column: 6;
+    background-color: #ededed;
+    text-align: center;
+    padding: 50px 10% 20px 20px;
+    height: 100%;
+  }
+  .grid_container_dots {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  .grid_container_arrow_prew {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    text-align: right;
+  }
+  .grid_container_arrow_next {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 4;
+    grid-column: 4;
+  }
+  .prev,
+  .next {
+    font-size: 25px;
+    position: relative;
+  }
+  .logo_secondary_black {
+    width: 150px;
+  }
+  .slide_img {
+    max-width: 600px;
+  }
+  /* ------------------------------------------------- */
+  /* ----------------- footer - desktop -------------- */
+  .flex_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 100%;
+  }
+  .icon_section {
+    margin-top: 0px;
+  }
+  .address {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
