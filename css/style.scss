@@ -231,6 +231,7 @@ nav {
 }
 .index_about_button {
     padding: 5px;
+    color: $primary_white;
 }
 .grid-container {
     background-color: $primary_black;
@@ -333,9 +334,6 @@ nav {
 
 .find_store {
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .store_h1 {
@@ -350,8 +348,8 @@ nav {
 }
 
 #map {
-    width: 100%;
     height: 300px;
+    width: 100%;
 }
 
 .mapboxgl-popup-content {
@@ -383,10 +381,13 @@ nav {
 
 .about {
     background-color: $primary_white;
+    padding: 20px 10% 50px 10%;
+    width: 100%;
 }
 
 .about_h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 .about_line {
@@ -421,6 +422,7 @@ nav {
 /*-- profilrytter -- */
 .about_profile_rider {
     background-color: $primary_black;
+    padding: 20px 10%;
 }
 
 .rider_wrapper {
@@ -471,6 +473,7 @@ nav {
 /*-- Øvrige ryttere -- */
 .about_talented_riders {
     background-color: $tone_lightgray;
+    padding: 20px 10%;
 }
 
 .talented_riders_h2 {
@@ -1325,7 +1328,7 @@ footer {
         padding: 5px;
         width: 150px;
         height: 50px;
-        margin-top: 40px 0 1px 0;
+        margin: 40px 0 1px 0;
     }
 
     .grid-container {
@@ -1512,26 +1515,38 @@ footer {
     /* -------------- About Draupnir ------------------- */
     .about {
         height: 100%;
+        width: 100%;
+        padding: 20px 15%;
+    }
+
+    .about_h1 {
+        font-size: 65px;
     }
 
     .about_line {
-        display: flex;
-        margin: 5px auto 25px auto;
-        width: 96%;
-        margin-left: -10%;
+        position: relative;
+        left: -20%;
+        width: 120%;
     }
 
+    .about_wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .about_wrapper p {
+        width: 48%;
+    }
     .about_text_wrapper {
-        width: 100%;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .about_img {
-        width: 536px;
-        height: 300px;
+        width: 48%;
+        height: 530px;
         object-fit: cover;
-        margin: 10px;
-        float: right;
         border: 1px solid $primary_black;
     }
 

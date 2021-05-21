@@ -282,6 +282,7 @@ nav {
 
 .index_about_button {
   padding: 5px;
+  color: #ffffff;
 }
 
 .grid-container {
@@ -441,16 +442,6 @@ nav {
 /* ----------------------------- Stores ---------------------------- */
 .find_store {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .store_h1 {
@@ -465,8 +456,8 @@ nav {
 }
 
 #map {
-  width: 100%;
   height: 300px;
+  width: 100%;
 }
 
 .mapboxgl-popup-content {
@@ -497,10 +488,13 @@ nav {
 /* ------------------------- About Draupnir ------------------------ */
 .about {
   background-color: #ffffff;
+  padding: 20px 10% 50px 10%;
+  width: 100%;
 }
 
 .about_h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 .about_line {
@@ -536,6 +530,7 @@ nav {
 /*-- profilrytter -- */
 .about_profile_rider {
   background-color: #252525;
+  padding: 20px 10%;
 }
 
 .rider_wrapper {
@@ -602,6 +597,7 @@ nav {
 /*-- Øvrige ryttere -- */
 .about_talented_riders {
   background-color: #ededed;
+  padding: 20px 10%;
 }
 
 .talented_riders_h2 {
@@ -1640,7 +1636,7 @@ footer {
     padding: 5px;
     width: 150px;
     height: 50px;
-    margin-top: 40px 0 1px 0;
+    margin: 40px 0 1px 0;
   }
   .grid-container {
     background-color: #252525;
@@ -1834,26 +1830,41 @@ footer {
   /* -------------- About Draupnir ------------------- */
   .about {
     height: 100%;
+    width: 100%;
+    padding: 20px 15%;
+  }
+  .about_h1 {
+    font-size: 65px;
   }
   .about_line {
+    position: relative;
+    left: -20%;
+    width: 120%;
+  }
+  .about_wrapper {
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 5px auto 25px auto;
-    width: 96%;
-    margin-left: -10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about_wrapper p {
+    width: 48%;
   }
   .about_text_wrapper {
-    width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
   .about_img {
-    width: 536px;
-    height: 300px;
+    width: 48%;
+    height: 530px;
     -o-object-fit: cover;
        object-fit: cover;
-    margin: 10px;
-    float: right;
     border: 1px solid #252525;
   }
   .open {

@@ -8,42 +8,6 @@ var map = new mapboxgl.Map({
     zoom: 6, // starting zoom
 });
 
-//start draupnir
-var draupnir = new mapboxgl.Marker({
-    color: "#af0404",
-})
-    .setLngLat([8.613359338915485, 55.96450041298367])
-    .setPopup(draupnir_popup)
-    .addTo(map);
-//slut draupnir
-
-//start troldkaer
-var troldkaer = new mapboxgl.Marker({
-    color: "#af0404",
-})
-    .setLngLat([10.349543887250162, 57.60627075919865])
-    .setPopup(troldkaer_popup)
-    .addTo(map);
-//sluttroldkaer
-
-//start hydahl
-var hyldahl = new mapboxgl.Marker({
-    color: "#af0404",
-})
-    .setLngLat([8.556420796994049, 55.174507758655146])
-    .setPopup(hyldahl_popup)
-    .addTo(map);
-//slut hydahl
-
-//start draumur
-var draumur = new mapboxgl.Marker({
-    color: "#af0404",
-})
-    .setLngLat([12.417597727694396, 55.92373029802915])
-    .setPopup(draumur_popup)
-    .addTo(map);
-//slut draumur
-
 //Markøre popup
 var draupnir_popup = new mapboxgl.Popup({
     offset: 35,
@@ -87,3 +51,39 @@ var draumur_popup = new mapboxgl.Popup({
         '<br><a href="mailto:bodil@draumur.dk">Mail: bodil@draumur.dk</a><br>' +
         '<br><a href="https://draumur.dk/" target="_blank">www.draumur.dk</a>'
 );
+
+//start draupnir
+var draupnir = new mapboxgl.Marker({
+    color: "#af0404",
+})
+    .setLngLat([8.613359338915485, 55.96450041298367])
+    .setPopup(draupnir_popup)
+    .addTo(map);
+//slut draupnir
+
+//start troldkaer
+var troldkaer = new mapboxgl.Marker({
+    color: "#af0404",
+})
+    .setLngLat([10.349543887250162, 57.60627075919865])
+    .setPopup(troldkaer_popup)
+    .addTo(map);
+//sluttroldkaer
+
+//start hydahl
+var hyldahl = new mapboxgl.Marker({
+    color: "#af0404",
+})
+    .setLngLat([8.556420796994049, 55.174507758655146])
+    .setPopup(hyldahl_popup)
+    .addTo(map);
+//slut hydahl
+
+//start draumur
+var draumur = new mapboxgl.Marker({
+    color: "#af0404",
+})
+    .setLngLat([12.417597727694396, 55.92373029802915])
+    .setPopup(draumur_popup)
+    .addTo(map);
+//slut draumur
