@@ -14,10 +14,10 @@ var draupnir_popup = new mapboxgl.Popup({
     closeButton: false,
 }).setHTML(
     '<h5 class="white_text">Draupnir Danmark</h5>' +
-        "<p><br>Debelmosevej 3<br>6900 Skjern</p>" +
-        "<p><br>Tlf. +45 5194 9561</p>" +
-        '<br><a href="mailto:sales@draupnir.com">Mail: sales@draupnir.com</a><br>' +
-        '<br><a href="http://draupnir.com/" target="_blank">www.draupnir.com</a>'
+    "<p><br>Debelmosevej 3<br>6900 Skjern</p>" +
+    "<p><br>Tlf. +45 5194 9561</p>" +
+    '<br><a href="mailto:sales@draupnir.com">Mail: sales@draupnir.com</a><br>' +
+    '<br><a href="http://draupnir.com/" target="_blank">www.draupnir.com</a>'
 );
 
 var troldkaer_popup = new mapboxgl.Popup({
@@ -25,9 +25,9 @@ var troldkaer_popup = new mapboxgl.Popup({
     closeButton: false,
 }).setHTML(
     '<h5 class="white_text">Stutteri Troldkær</h5>' +
-        "<p><br>Troldkærvej 2<br>9982 Ålbæk</p>" +
-        "<p><br>Tlf. +45 2989 9753<br> tlf. +47 97533197 </p><br>" +
-        '<a href="mailto:stutteri.troldkaer@gmail.com">Mail: stutteri.troldkaer@gmail.com</a>'
+    "<p><br>Troldkærvej 2<br>9982 Ålbæk</p>" +
+    "<p><br>Tlf. +45 2989 9753<br> tlf. +47 97533197 </p><br>" +
+    '<a href="mailto:stutteri.troldkaer@gmail.com">Mail: stutteri.troldkaer@gmail.com</a>'
 );
 
 var hyldahl_popup = new mapboxgl.Popup({
@@ -35,10 +35,10 @@ var hyldahl_popup = new mapboxgl.Popup({
     closeButton: false,
 }).setHTML(
     '<h5 class="white_text">Hyldahl Rideudstyr</h5>' +
-        "<p><br>Juvrevej 81<br>6792 Rømø</p>" +
-        "<p><br>Tlf. +45 7468 7716</p>" +
-        '<br><a href="mailto:info@hyldahl.com">Mail: info@hyldahl.com</a><br>' +
-        '<br><a href="https://hyldahl.com/" target="_blank">www.hyldahl.com</a>'
+    "<p><br>Juvrevej 81<br>6792 Rømø</p>" +
+    "<p><br>Tlf. +45 7468 7716</p>" +
+    '<br><a href="mailto:info@hyldahl.com">Mail: info@hyldahl.com</a><br>' +
+    '<br><a href="https://hyldahl.com/" target="_blank">www.hyldahl.com</a>'
 );
 
 var draumur_popup = new mapboxgl.Popup({
@@ -46,10 +46,10 @@ var draumur_popup = new mapboxgl.Popup({
     closeButton: false,
 }).setHTML(
     '<h5 class="white_text">DRAUMUR ApS</h5>' +
-        "<p><br>Hesselrødvej 9<br>2980 Kokkedal</p>" +
-        "<p><br>Tlf. +45 2924 9914</p>" +
-        '<br><a href="mailto:bodil@draumur.dk">Mail: bodil@draumur.dk</a><br>' +
-        '<br><a href="https://draumur.dk/" target="_blank">www.draumur.dk</a>'
+    "<p><br>Hesselrødvej 9<br>2980 Kokkedal</p>" +
+    "<p><br>Tlf. +45 2924 9914</p>" +
+    '<br><a href="mailto:bodil@draumur.dk">Mail: bodil@draumur.dk</a><br>' +
+    '<br><a href="https://draumur.dk/" target="_blank">www.draumur.dk</a>'
 );
 
 //start draupnir

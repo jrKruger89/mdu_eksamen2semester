@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*---------- Sass Variabler ---------------------------------------- */
-/*---- */
-/*---- */
+/*------------------------ */
+/*------------------------ */
 /* ----------------------------------------------------------------- */
 /* --------------------------- fonts ------------------------------- */
 /* ----------------------------------------------------------------- */
@@ -34,16 +34,6 @@ h3 {
   font-weight: 100;
 }
 
-/*h4 {
-    font-family: $secondary_font;
-    font-size: 15px;
-    font-weight: 100;
-}
-h5 {
-    font-family: $secondary_font;
-    font-size: 12px;
-    font-weight: 100;
-}*/
 h6 {
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -230,7 +220,17 @@ nav {
 .index_about_section,
 .index_product_section,
 .index_guidance_section {
-  padding: 20px 10%;
+  padding: 40px 10%;
+}
+
+.hero_h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.hero_text {
+  font-size: 15px;
+  text-align: center;
 }
 
 .hero_video_section {
@@ -263,17 +263,16 @@ nav {
 }
 
 .index_about_line {
-  width: 145px;
+  width: 150px;
   position: relative;
   left: -10%;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 50px 0;
 }
 
 .index_about_img {
-  height: 250px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .index_about_p {
@@ -285,51 +284,14 @@ nav {
   color: #ffffff;
 }
 
-.grid-container {
-  background-color: #252525;
-  display: -ms-grid;
-  display: grid;
-  height: 600px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-      grid-template-areas: "h2_area" "line_area" "img_area" "p_area" "button_area";
-}
-
-.h2_area {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: h2_area;
-}
-
-.line_area {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: line_area;
-}
-
-.img_area {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: img_area;
-}
-
-.p_area {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: p_area;
-}
-
-.button_area {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: button_area;
-}
-
-.link_button {
-  display: none;
+.link_button_anchor {
+  margin: 0 0 25px 0;
+  padding-top: 2px;
+  height: 23px;
+  width: 120px;
+  font: 14px "Abel", sans-serif;
+  text-align: center;
+  background-color: #af0404;
 }
 
 .index_product_line {
@@ -360,17 +322,14 @@ nav {
           justify-content: center;
 }
 
-.product_link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.index_product_h4 {
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
 }
 
 .index_product_img {
-  width: 80%;
+  width: 80% !important;
+  z-index: 2;
 }
 
 .layer {
@@ -381,11 +340,6 @@ nav {
   z-index: -1;
   opacity: 0.5;
   margin-bottom: 25px;
-}
-
-.index_product_p {
-  -webkit-text-decoration: underline 1px solid #cda46b;
-          text-decoration: underline 1px solid #cda46b;
 }
 
 .index_guidance_section {
@@ -430,8 +384,11 @@ nav {
      object-fit: cover;
 }
 
-.index_guidance_p {
+.index_guidance_h4 {
   margin: 15px 0;
+  font-family: "Playfair Display", serif;
+  max-width: 120px;
+  text-align: center;
 }
 
 .index_guidance_button {
@@ -439,7 +396,7 @@ nav {
 }
 
 /* ----------------------------------------------------------------- */
-/* ----------------------------- Stores ---------------------------- */
+/* ----------------------------- stores ---------------------------- */
 .find_store {
   padding: 0;
 }
@@ -485,7 +442,7 @@ nav {
 }
 
 /* ----------------------------------------------------------------- */
-/* ------------------------- About Draupnir ------------------------ */
+/* ------------------------- about draupnir ------------------------ */
 .about {
   background-color: #ffffff;
   padding: 20px 10% 50px 10%;
@@ -494,7 +451,7 @@ nav {
 
 .about_h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .about_line {
@@ -503,8 +460,10 @@ nav {
 }
 
 .about_img {
-  width: 100%;
-  margin-bottom: 10px;
+  width: 60%;
+  display: block;
+  padding: 20px;
+  margin: auto;
 }
 
 .about_p_hide {
@@ -512,22 +471,19 @@ nav {
 }
 
 .about_button {
-  background-color: transparent;
-  border: none;
-  color: #252525;
-  text-align: left;
-  border: solid #af0404;
   margin-top: 10px;
   width: 130px;
-  border: solid #af0404;
   text-align: center;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid #252525;
 }
 
 .open {
   display: block;
 }
 
-/*-- profilrytter -- */
+/*-- profile rider -- */
 .about_profile_rider {
   background-color: #252525;
   padding: 20px 10%;
@@ -594,7 +550,7 @@ nav {
   margin: 5px 20px 5px 20px;
 }
 
-/*-- Øvrige ryttere -- */
+/*-- other talented riders -- */
 .about_talented_riders {
   background-color: #ededed;
   padding: 20px 10%;
@@ -628,6 +584,7 @@ nav {
   text-align: center;
   width: 40%;
   height: 150px;
+  margin-bottom: 6%;
 }
 
 .talented_rider_img {
@@ -640,36 +597,78 @@ nav {
 }
 
 /* ----------------------------------------------------------------- */
-/* ----------------------------- Contact --------------------------- */
-.contact_section {
-  padding: 0;
+/* ----------------------------- contact --------------------------- */
+.contact_h1 {
+  font-size: 18px;
+}
+
+.contact_grid {
+  background-image: url(../img/kontakt_mobil.png);
+  height: 590px;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 360px 37%;
+      grid-template-rows: 360px 37%;
+  gap: 0px 0px;
+      grid-template-areas: "white_space" "contact_information";
+}
+
+.white_space {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: white_space;
+}
+
+.contact_information {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contact_information;
 }
 
 .contact_wrapper {
   border: 1px solid #252525;
+  background-color: #ffffff;
+  opacity: 80%;
   padding: 20px;
-  margin: 40px 20px;
+  margin: auto;
+  max-width: 300px;
+}
+
+.contact_icons {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.icon_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #252525;
 }
 
-.contact_line {
-  width: 200px;
-  margin-bottom: 10px;
+.contact_icon_spacing {
+  margin: 5px 0;
 }
 
-.contact_img {
-  width: 100%;
-  height: 100%;
+.contact__facebook_icon_spacing {
+  margin-top: 5px;
+}
+
+.contact_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ----------------------------------------------------------------- */
@@ -1155,6 +1154,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 40px;
 }
 
 .address {
@@ -1177,11 +1177,24 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 30px;
+}
+
+.icon_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.trustpilot {
+  margin-top: 20px;
 }
 
 .icon {
@@ -1260,10 +1273,15 @@ footer {
   }
   /* ------------------------------------------------- */
   /* ---------------- index - tablet ----------------- */
+  .hero_h1 {
+    font-size: 60px;
+  }
+  .hero_text {
+    font-size: 20px;
+  }
   .index_about_line {
     width: 205px;
     left: -10%;
-    margin: 5px 0 30px 0;
   }
   .index_about_img {
     height: 450px;
@@ -1312,15 +1330,16 @@ footer {
   .index_guidance_img {
     height: 350px;
   }
-  .index_guidance_p {
+  .index_guidance_h4 {
     margin: 20px 0;
+    max-width: 210px;
   }
   .index_guidance_button {
     margin: 0 0 40px 0;
     padding: 2px 30px;
   }
   /* ------------------------------------------------- */
-  /* ------------- Stores - tablet ------------------- */
+  /* ------------- stores - tablet ------------------- */
   .store_h1 {
     font-size: 30px;
   }
@@ -1334,11 +1353,20 @@ footer {
     font-size: 18px;
   }
   /* ------------------------------------------------- */
-  /* -------------- About Draupnir ------------------- */
+  /* ---------- about draupnir - tablet -------------- */
+  .about_h1 {
+    font-size: 45px;
+  }
   .about_line {
     width: 445px;
   }
-  /*-- profilrytter -- */
+  .about_img {
+    width: 35%;
+    display: block;
+    padding: 20px;
+    margin: auto;
+  }
+  /*-- profile rider - tablet -- */
   .rider_wrapper {
     height: 1475px;
   }
@@ -1352,7 +1380,7 @@ footer {
   .about_rider_line {
     width: 280px;
   }
-  /*-- Øvrige ryttere -- */
+  /*-- other talented riders - tablet -- */
   .talented_riders_line {
     margin: 20px auto 25px auto;
     width: 175px;
@@ -1361,12 +1389,44 @@ footer {
     text-align: center;
     width: 30%;
     height: 170px;
+    margin-bottom: 0;
   }
   .talented_rider_img {
     width: 60%;
   }
   /* ------------------------------------------------- */
-  /* ----------------- Contact ----------------------- */
+  /* -------------- contact - tablet ----------------- */
+  .contact_h1 {
+    font-size: 18px;
+  }
+  .contact_grid {
+    background-image: url(../img/kontakt_comp.png);
+    width: 100%;
+    background-size: cover;
+    height: 410px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "contact_information white_space";
+  }
+  .contact_information {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact_information;
+    margin: auto;
+  }
+  .white_space {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: white_space;
+  }
+  .contact_icons {
+    width: 30px;
+  }
   /* ------------------------------------------------- */
   /* ------- product filter site - tablet ------------ */
   .products_filter_btn {
@@ -1392,55 +1452,6 @@ footer {
     -ms-grid-rows: 50px 360px 50px 1fr;
         grid-template-rows: 50px 360px 50px 1fr;
   }
-  /*.product_grid_products{
-        grid-template-columns: 2% 13% 12% 13% 2% 58%;
-        grid-template-rows: 5% 70% 5% 20%;
-    }
-    .grid_container_gold_arrow{
-        grid-row: 1;
-        grid-column: 1;
-        text-align: center;
-    }
-    .grid_container_goback{
-        grid-row: 1;
-        grid-column: 2/5;
-    }
-    .grid_container_diasshow{
-        grid-row: 2/3;
-        grid-column: 1/6;
-        padding: 10% 10% 0 10%;
-    }
-    .grid_container_product_text{
-        grid-row: 1/5;
-        grid-column: 6;
-        background-color: $tone_lightgray;
-        text-align: center;
-        padding: 50px 10% 20px 20px;
-        height: 100%;
-    }
-    .grid_container_dots{
-        grid-row: 3;
-        grid-column: 3;
-    }
-    .grid_container_arrow_prew{
-        grid-row: 3;
-        grid-column: 2;
-        text-align: right;
-    }
-    .grid_container_arrow_next{
-        grid-row: 3;
-        grid-column: 4;
-    }
-    .prev, .next{
-        font-size: 25px;
-        position: relative;
-    }
-    .slideshow-container {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
-    }*/
   /* ------------------------------------------------- */
   /* ---------------- footer - tablet ---------------- */
   .footer_h2 {
@@ -1453,13 +1464,6 @@ footer {
     margin-bottom: 5px;
   }
   .icon_section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     margin-top: 0px;
   }
   .icon_background {
@@ -1607,12 +1611,18 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .hero_h1 {
+    font-size: 80px;
+  }
+  .hero_text {
+    font-size: 25px;
+  }
   .content_wrapper {
     top: 0;
   }
   .hero_section_button {
     margin: 70px;
-    padding: 2px 30px;
+    padding: 10px 30px;
     font-size: 20px;
     width: 175px;
   }
@@ -1629,14 +1639,17 @@ footer {
     height: 700px;
   }
   .index_about_line {
-    width: 305px;
-    left: 10px;
+    width: 310px;
+    left: -70px;
+  }
+  .index_about_p {
+    max-width: 75%;
+    margin: 0;
   }
   .index_about_button {
     padding: 5px;
-    width: 150px;
-    height: 50px;
     margin: 40px 0 1px 0;
+    font-size: 20px;
   }
   .grid-container {
     background-color: #252525;
@@ -1645,34 +1658,29 @@ footer {
     height: 500px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
-        grid-template-areas: "img_area h2_area" "img_area line_area" "img_area p_area" "img_area button_area";
+        grid-template-areas: "img_area h2_area" "img_area p_area" "img_area button_area";
   }
   .h2_area {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: h2_area;
   }
-  .line_area {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: line_area;
-  }
   .img_area {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 4;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: img_area;
   }
   .p_area {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: p_area;
   }
   .button_area {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: button_area;
   }
@@ -1706,17 +1714,19 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .link_button {
-    display: block;
-    position: absolute;
-    border: none;
+  .link_button_anchor {
+    font-family: "Abel", sans-serif;
+    height: 46px;
+    z-index: 3;
+    position: relative;
+    top: -245px;
     background-color: transparent;
     font-size: 0;
-    padding: 2px 30px;
-    width: 125px;
+    padding: 10px 30px;
+    width: 145px;
   }
-  .product_link {
-    pointer-events: none;
+  .guidance_link_anchor {
+    top: -200px;
   }
   .alignment_wrapper {
     width: -webkit-fit-content;
@@ -1728,13 +1738,10 @@ footer {
     left: -18%;
   }
   .layer {
-    height: 250px;
-    width: 500px;
+    height: 210px;
+    width: 370px;
     margin-bottom: 25px;
     opacity: 0.8;
-  }
-  .index_product_p {
-    margin-bottom: 50px;
   }
   .index_guidance_section {
     background-color: #ededed;
@@ -1781,8 +1788,9 @@ footer {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
   }
-  .index_guidance_p {
+  .index_guidance_h4 {
     margin: 15px 0;
+    max-width: 210px;
   }
   .index_guidance_button {
     margin: 0 0 15px 0;
@@ -1790,12 +1798,12 @@ footer {
     top: -185px;
     font-size: 0;
     background-color: transparent;
-    padding: 2px 30px;
+    padding: 10px 30px;
     border: 0;
-    width: 135px;
+    width: 145px;
   }
   /* ------------------------------------------------- */
-  /* ---------------- Store - desktop ---------------- */
+  /* ---------------- store - desktop ---------------- */
   .store_h1 {
     font-size: 50px;
   }
@@ -1827,19 +1835,25 @@ footer {
     text-align: center;
   }
   /* ------------------------------------------------- */
-  /* -------------- About Draupnir ------------------- */
+  /* ------------ about draupnir - desktop ----------- */
+  .about_h4 {
+    font-size: 20px;
+  }
   .about {
     height: 100%;
     width: 100%;
     padding: 20px 15%;
   }
   .about_h1 {
-    font-size: 65px;
+    font-size: 50px;
   }
   .about_line {
     position: relative;
     left: -20%;
     width: 120%;
+  }
+  .about_button {
+    margin-top: 30px;
   }
   .about_wrapper {
     margin: 0 auto;
@@ -1861,16 +1875,13 @@ footer {
     margin: 0 auto;
   }
   .about_img {
-    width: 48%;
-    height: 530px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border: 1px solid #252525;
+    width: 35%;
+    padding: 30px;
   }
   .open {
     display: block;
   }
-  /*-- profilrytter -- */
+  /*-- profile rider - desktop -- */
   .rider_wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1888,7 +1899,7 @@ footer {
   }
   .rider_profile {
     width: 31%;
-    height: 100%;
+    height: 85%;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -1901,12 +1912,12 @@ footer {
     width: 90%;
   }
   .about_rider_p {
-    margin: 10px 20px 10px 20px;
+    margin: 10px 45px 10px 45px;
   }
-  /*-- Øvrige ryttere -- */
+  /*-- other talented riders - desktop -- */
   .talented_riders_line {
     margin: 30px auto 30px auto;
-    width: 140px;
+    width: 560px;
   }
   .talented_rider_wrapper {
     display: -webkit-box;
@@ -1926,6 +1937,7 @@ footer {
     text-align: center;
     width: 25%;
     height: 400%;
+    margin-bottom: 0;
   }
   .talented_rider_img {
     width: 85%;
@@ -1937,27 +1949,49 @@ footer {
     padding-bottom: 30px;
   }
   /* ------------------------------------------------- */
-  /* ------------------ Contact ---------------------- */
-  .contact_section {
-    padding: 0;
+  /* ------------- contact - desktop ----------------- */
+  .contact_h1 {
+    font-size: 25px;
+  }
+  .contact_grid {
+    background-image: url(../img/kontakt_comp.png);
     width: 100%;
-    height: 500px;
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "contact_information white_space";
+  }
+  .contact_information {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact_information;
+    margin: auto;
+  }
+  .white_space {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: white_space;
   }
   .contact_wrapper {
-    position: absolute;
-    top: 200px;
-    background-color: #ffffff;
-    height: 220px;
+    min-width: 400px;
+    max-width: 600px;
+    margin-left: 10%;
   }
-  .contact_line {
-    width: 200px;
-    margin-bottom: 10px;
+  .contact_icons {
+    width: 35px;
+    margin-left: 20px;
   }
-  .contact_img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .contact_text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /* ------------------------------------------------- */
   /* ---------- product sites - desktop -------------- */
@@ -2048,7 +2082,7 @@ footer {
     width: 100%;
   }
   .icon_section {
-    margin-top: 0px;
+    margin-top: 15px;
   }
   .address {
     text-align: left;
