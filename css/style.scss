@@ -135,7 +135,7 @@ nav {
     font-size: 20px;
 }
 .last_child {
-    border: 1px solid $primary_red;
+    background-color: $primary_red;
     padding: 5px;
     width: fit-content;
 }
@@ -145,7 +145,7 @@ nav {
 .nav_list {
     padding: 0;
     margin: 0 15px 20px;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     display: none;
     font-family: $primary_font;
     font-size: 20px;
@@ -184,11 +184,14 @@ nav {
 .hero_h1 {
     font-size: 35px;
     margin-bottom: 10px;
+    text-shadow: #000 1px 0 10px;
 }
 .hero_text {
     font-size: 15px;
     text-align: center;
+    text-shadow: #000 1px 0 10px;
 }
+
 .hero_video_section {
     height: 400px;
 }
@@ -203,6 +206,10 @@ nav {
 .hero_section_button {
     margin: 15px;
     padding: 10px;
+    background-color: $primary_red;
+    color: $primary_white;
+    text-align: center;
+    font-family: $primary_font;
 }
 .index_about_section {
     background-color: $primary_black;
@@ -223,6 +230,7 @@ nav {
 .index_about_button {
     padding: 5px;
     color: $primary_white;
+    font-family: $primary_font;
 }
 .link_button_anchor {
     margin: 0 0 25px 0;
@@ -443,7 +451,7 @@ nav {
 .talented_rider_img {
     width: 80%;
 }
-.talented_riders_p {
+.talented_riders_h4 {
     position: relative;
     padding-top: 10px;
 }
@@ -453,7 +461,7 @@ nav {
     font-size: 18px;
 }
 .contact_grid {
-    background-image: url(../img/kontakt_mobil.png);
+    background-image: url(../img/kontakt_mobil.webp);
     height: 590px;
     width: 100%;
     background-size: cover;
@@ -488,6 +496,8 @@ nav {
     display: flex;
     align-items: center;
     color: $primary_black;
+    font-family: $primary_font;
+    font-weight: 600;
 }
 .contact_icon_spacing {
     margin: 5px 0;
@@ -850,6 +860,46 @@ nav {
     width: 60%;
     margin: 0 auto 40px auto;
 }
+
+/* ----------------------------------------------------------------- */
+/* --------------------------- Error ------------------------------- */
+
+.error_main {
+    height: 100vh;
+}
+.error_h1,
+.error_h2 {
+    font: 35px $secondary_font;
+}
+
+.error_h2 {
+    margin-bottom: 50px;
+}
+.error_image {
+    background-image: url("/img/horse_mobil.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.error_page {
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-25%, -25%);
+}
+
+.error_link {
+    font-family: $primary_font;
+    background-color: $primary_red;
+    text-decoration: none;
+    color: $primary_white;
+    padding: 10px 30px;
+}
+
 /* ----------------------------------------------------------------- */
 /* --------------------------- footer ------------------------------ */
 footer {
@@ -904,6 +954,11 @@ footer {
 }
 .icon_anchor {
     height: 25px;
+}
+
+.icon_section_h2,
+.trustpilot_section_h2 {
+    display: none;
 }
 /* ----------------------------------------------------------------- */
 /* ---------------------- mediaquery tablet ------------------------ */
@@ -1016,7 +1071,10 @@ footer {
         width: 400px;
     }
     #map {
-        height: 500px;
+        height: 600px;
+    }
+    .map_h5 {
+        font-size: 22px;
     }
     .mapboxgl-popup-content a {
         font-size: 18px;
@@ -1069,7 +1127,7 @@ footer {
         font-size: 18px;
     }
     .contact_grid {
-        background-image: url(../img/kontakt_comp.png);
+        background-image: url(../img/kontakt_comp.webp);
         width: 100%;
         background-size: cover;
         height: 410px;
@@ -1099,6 +1157,7 @@ footer {
     }
     .btn {
         width: 22.5%;
+        font-size: 18px;
     }
     .products_filter_img2 {
         margin: 20px 0 43px 0;
@@ -1145,6 +1204,16 @@ footer {
     }
     .address {
         text-align: left;
+    }
+
+    /* ----------------------------------------------------------------- */
+    /* --------------------------- Error ------------------------------- */
+    .error_image {
+        background-position: bottom;
+    }
+
+    .error_page {
+        top: 25%;
     }
 }
 /* ----------------------------------------------------------------- */
@@ -1217,10 +1286,7 @@ footer {
     .last_child {
         padding: 5px 10px;
     }
-    .last_child:hover {
-        border: 1px solid $primary_red;
-        background-color: $primary_red;
-    }
+
     .logo {
         width: 230px;
         float: left;
@@ -1403,6 +1469,10 @@ footer {
     #map {
         height: 600px;
     }
+
+    .map_h5 {
+        font-size: 24px;
+    }
     .mapboxgl-popup-content a {
         font-size: 20px;
     }
@@ -1416,6 +1486,7 @@ footer {
     }
     .btn {
         width: 11.9%;
+        font-size: 18px;
     }
     .products_filter_img2 {
         margin: 20px 0 38px 0;
@@ -1514,7 +1585,7 @@ footer {
     .talented_rider_img {
         width: 85%;
     }
-    .talented_riders_p {
+    .talented_riders_h4 {
         position: relative;
         padding-top: 20px;
         bottom: 10px;
@@ -1526,7 +1597,7 @@ footer {
         font-size: 25px;
     }
     .contact_grid {
-        background-image: url(../img/kontakt_comp.png);
+        background-image: url(../img/kontakt_comp.webp);
         width: 100%;
         background-size: cover;
         background-position: top;
@@ -1606,6 +1677,34 @@ footer {
     }
     .slide_img {
         max-width: 600px;
+    }
+
+    /* ----------------------------------------------------------------- */
+    /* --------------------------- Error ------------------------------- */
+    .error_image {
+        background-image: url("/img/horse_computer.jpg");
+        background-position: center;
+    }
+
+    .error_h1 {
+        text-align: left;
+        font-size: 45px;
+    }
+
+    .error_h2 {
+        margin-bottom: 100px;
+        font-size: 40px;
+    }
+    .error_link {
+        padding: 15px 35px;
+        font-size: 20px;
+    }
+
+    .error_page {
+        height: 350px;
+        top: 35%;
+        left: 77%;
+        text-align: left;
     }
     /* ------------------------------------------------- */
     /* ----------------- footer - desktop -------------- */
