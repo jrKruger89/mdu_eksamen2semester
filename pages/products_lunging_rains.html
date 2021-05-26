@@ -1,239 +1,397 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <title>Draupnir Danmark | Indspændingstøjler</title>
-    <link rel="icon" href="../img/icon.png">
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" />
-    <script src="../js/script.js" defer></script>
-    <script src="../js/slideshow.js" defer></script>
-    <script src="https://use.fontawesome.com/ac4a511276.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="title" content="Draupnir Danmark | indspændingstøjler | kvalitet til islandske heste"/>
-    <meta name="description" content="Indspændingstøjler med tøjletryk og karabinhager i rustfrit stål - longeudstyr i økovenlig kvalitetslæder til longering - holdbart rideudstyr til islænder" />
-    <meta name="subject" content="Indspændingstøjler med tøjletryk og karabinhager i rustfrit stål - longeudstyr i økovenlig kvalitetslæder til longering - holdbart rideudstyr til islænder" />
-    <meta name="author" content="Maja Wennerwald, Camilla Nørgaard, Lise-May Byfuglien, Melina Kaetow & Jesper Krüger" />
-</head>
-<body>
-    <header>
-        <a href="../index.html"><img class="logo" alt="draupnir danmark logo" src="../img/draupnir-white.svg" /></a>
-        <!-- navigation -->
-        <div id="menu" onclick="onClickMenu()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-        </div>
-        <nav>
-            <ul class="nav_list">
-                <li><a href="saddles.html" class="navigation_link">Sadler</a></li>
-                <li>
-                    <a href="products.html" class="navigation_link">Øvrige produkter</a>
-                </li>
-                <li class="navigation_link open_menu">Vejledning
-                    <ul class="sub_nav">
-                        <li>
-                            <a href="guidance.html" class="navigation_link sub_nav_link">
-                                Alle vejledninger
-                            </a>
-                        </li>
-                        <li>
-                            <a href="guidance.html #maintenance" class="navigation_link sub_nav_link">
-                                Vedligehold af udstyr
-                            </a>
-                        </li>
-                        <li>
-                            <a href="guidance.html #size" class="navigation_link sub_nav_link">
-                                Størrelsesguide
-                            </a>
-                        </li>
-                        <li>
-                            <a href="guidance.html #panels" class="navigation_link sub_nav_link">
-                                Latex- & uldstopning
-                            </a>
-                        </li>
-                        <li>
-                            <a href="guidance.html #types" class="navigation_link sub_nav_link">
-                                Sadeltyper
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="about_draupnir.html" class="navigation_link">Om Draupnir</a></li>
-                <li><a href="contact.html" class="navigation_link">Kontakt</a></li>
-                <li>
-                    <a href="stores.html" class="navigation_link last_child"><i class="fa fa-map-marker"></i>Find
-                        forhandler</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- product describtion and images -->
-        <div class="product_grid_products">
-            <div class="grid_container_gold_arrow">
-                <a href="../pages/products.html">
-                    <h6 class="gold_arrow">&#10094;</h6>
-                </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Draupnir Danmark | Indspændingstøjler</title>
+        <link rel="icon" href="../img/icon.png" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+        />
+        <script src="../js/script.js" defer></script>
+        <script src="../js/slideshow.js" defer></script>
+        <script src="https://use.fontawesome.com/ac4a511276.js"></script>
+        <script
+            src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+            async
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+
+        <meta
+            name="title"
+            content="Draupnir Danmark | indspændingstøjler | kvalitet til islandske heste"
+        />
+        <meta
+            name="description"
+            content="Indspændingstøjler med tøjletryk og karabinhager i rustfrit stål - longeudstyr i økovenlig kvalitetslæder til longering - holdbart rideudstyr til islænder"
+        />
+        <meta
+            name="subject"
+            content="Indspændingstøjler med tøjletryk og karabinhager i rustfrit stål - longeudstyr i økovenlig kvalitetslæder til longering - holdbart rideudstyr til islænder"
+        />
+        <meta
+            name="author"
+            content="Maja Wennerwald, Camilla Nørgaard, Lise-May Byfuglien, Melina Kaetow & Jesper Krüger"
+        />
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"
+                ><img
+                    class="logo"
+                    alt="draupnir danmark logo"
+                    src="../img/draupnir-white.svg"
+            /></a>
+            <!-- navigation -->
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
             </div>
-            <div class="grid_container_goback">
-                <a href="../pages/products.html">
-                    <h6>Tilbage til produktoversigt</h6>
-                </a>
-            </div>
-            <div class="grid_container_diasshow">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img class="slide_img" alt="lunging rains draupnir"
-                            src="../img/products/indspandingstojler_1.png" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="slide_img" alt="luning equipment draupnir"
-                            src="../img/products/longeringssaet_3.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="grid_container_arrow_prew">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            </div>
-            <div class="grid_container_dots">
-                <div style="text-align: center">
-                    <span class="dot dot8" onclick="currentSlide(1)"></span>
-                    <span class="dot dot9" onclick="currentSlide(2)"></span>
-                </div>
-            </div>
-            <div class="grid_container_arrow_next">    
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <div class="grid_container_product_text">
-                <img src="../img/sekundaer-black.svg" alt="draupnir danmark logo" class="logo_secondary_black">
-                <h2 class="product_heading"><b>Indspændingstøjler</b></h2>
-                <p>Indpændingstøjler fra Draupnir i samme lækre og holdbare læderkvalitet som de øvrige Draupnir-produkter.
-                     Læderet er italiensk og tysk og er garvet under miljøvenlige forhold.
-                    <br>Indspændingstøjlerne har karabinhager i begge ender for nem montering og spænder til justering. 
-                    En elastisk gummiring udgør et moderat tøjletryk. 
-                </p>
-                <h5 class="price_text">Vejledende udsalgspris</h5>
-                <h3 class="price">DKK 900,-</h3>
-                <a href="../pages/stores.html">
-                    <h4 class="button button_red">Find forhandler</h4>
-                </a>
-            </div>
-        </div>
-        <!-- related products -->
-        <section class="related_products">
-            <div class="wrapper">
-                <h2 class="product_heading white_text">Relaterede produkter</h2>
-                <div class="line product_line3"></div>
-                <div class="container">
-                    <div class="filterDiv lunging">
-                        <img class="products_filter_img2" alt="draupnir longegjord til islandsk hest"
-                            src="../img/products/longegjorde_2.png">
-                        <h4>Longegjord</h4>
-                        <a href="../pages/products_lunging_girth.html">
-                            <h5 class="products_filter_btn">LÆS MERE</h5>
-                        </a>
-                    </div>
-                    <div class="filterDiv lunging">
-                        <img class="products_filter_img2" alt="draupnir longesæt til islandsk hest"
-                            src="../img/products/longeringssaet_3.png">
-                        <h4>Longesæt</h4>
-                        <a href="../pages/products_lunging_equipment.html">
-                            <h5 class="products_filter_btn">LÆS MERE</h5>
-                        </a>
-                    </div>
-                    <div class="filterDiv reins">
-                        <img class="products_filter_img2" alt="draupnir tøjler læder til islandsk hest"
-                            src="../img/products/tojler_laeder_3.1.png">
-                        <h4>Tøjler læder</h4>
-                        <a href="../pages/products_rains_leather.html">
-                            <h5 class="products_filter_btn">LÆS MERE</h5>
-                        </a>
-                    </div>
-                    <div class="filterDiv reins">
-                        <img class="products_filter_img2" alt="draupnir tøjler gummi til islandsk hest"
-                            src="../img/products/toejler_1_gummi.png">
-                        <h4>Tøjler gummi</h4>
-                        <a href="../pages/products_rains_rubber.html">
-                            <h5 class="products_filter_btn">LÆS MERE</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="flex_box">
-            <!-- address -->
-            <div class="address">
-                <h2 class="footer_h2 white_text">Draupnir Danmark</h2>
-                <p class="white_text">
-                    Debelmosevej 3<br />
-                    6900 Skjern<br /><br />
-                    CVR: 32165400
-                </p>
-            </div>
-            <!-- some and contact icons -->
-            <section class="icon_section">
-                <div class="icon_background">
-                    <a href="https://www.facebook.com/draupnirdanmark" target="_blank" class="icon_anchor">
-                        <svg class="icon" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                            width="512" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path
-                                    d="m437.02 74.98c-48.353-48.351-112.64-74.98-181.02-74.98s-132.667 26.629-181.02 74.98c-48.351 48.353-74.98 112.64-74.98 181.02s26.629 132.667 74.98 181.02c48.353 48.351 112.64 74.98 181.02 74.98s132.667-26.629 181.02-74.98c48.351-48.353 74.98-112.64 74.98-181.02s-26.629-132.667-74.98-181.02zm-10.607 351.433c-34.091 34.091-76.596 56.708-122.832 65.917v-164.701h34.338c7.133 0 13.323-4.833 15.053-11.753l12.025-48.097c1.167-4.668.137-9.52-2.824-13.312s-7.418-5.967-12.229-5.967h-53.862c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h53.862c.075 0 .251 0 .407.199.155.198.112.37.094.443l-12.024 48.097c-.058.23-.264.391-.501.391h-41.838c-4.142 0-7.5 3.358-7.5 7.5v174.684c-10.714 1.437-21.59 2.186-32.582 2.186-64.374 0-124.894-25.068-170.413-70.587s-70.587-106.039-70.587-170.413 25.068-124.894 70.587-170.413 106.039-70.587 170.413-70.587 124.894 25.068 170.413 70.587 70.587 106.039 70.587 170.413-25.068 124.894-70.587 170.413z" />
-                                <path
-                                    d="m352.193 96.193h-48.097c-52.757 0-95.677 42.921-95.677 95.678v56.629h-48.613c-8.556 0-15.516 6.96-15.516 15.516v48.097c0 8.556 6.96 15.516 15.516 15.516h48.613v136.791c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-144.291c0-4.142-3.358-7.5-7.5-7.5h-56.113c-.285 0-.516-.231-.516-.516v-48.097c0-.285.231-.516.516-.516h56.113c4.142 0 7.5-3.358 7.5-7.5v-64.129c0-44.486 36.192-80.678 80.677-80.678h48.097c.285 0 .516.231.516.516v48.097c0 .285-.231.516-.516.516h-32.064c-17.396 0-31.548 14.152-31.548 31.548v32.064c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-32.064c0-9.125 7.423-16.548 16.548-16.548h32.064c8.556 0 15.516-6.96 15.516-15.516v-48.097c0-8.555-6.96-15.516-15.516-15.516z" />
-                            </g>
-                        </svg>
+            <nav>
+                <ul class="nav_list">
+                    <li>
+                        <a href="saddles.html" class="navigation_link"
+                            >Sadler</a
+                        >
+                    </li>
+                    <li>
+                        <a href="products.html" class="navigation_link"
+                            >Øvrige produkter</a
+                        >
+                    </li>
+                    <li class="navigation_link open_menu">
+                        Vejledning
+                        <ul class="sub_nav">
+                            <li>
+                                <a
+                                    href="guidance.html"
+                                    class="navigation_link sub_nav_link"
+                                >
+                                    Alle vejledninger
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/maintenence.html"
+                                    class="navigation_link sub_nav_link"
+                                >
+                                    Vedligehold af udstyr
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/size.html"
+                                    class="navigation_link sub_nav_link"
+                                >
+                                    Størrelsesguide
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/panels.html"
+                                    class="navigation_link sub_nav_link"
+                                >
+                                    Latex- & uldstopning
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/types.html"
+                                    class="navigation_link sub_nav_link"
+                                >
+                                    Sadeltyper
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about_draupnir.html" class="navigation_link"
+                            >Om Draupnir</a
+                        >
+                    </li>
+                    <li>
+                        <a href="contact.html" class="navigation_link"
+                            >Kontakt</a
+                        >
+                    </li>
+                    <li>
+                        <a href="stores.html" class="navigation_link last_child"
+                            ><i class="fa fa-map-marker"></i>Find forhandler</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- product describtion and images -->
+            <div class="product_grid_products">
+                <div class="grid_container_gold_arrow">
+                    <a href="../pages/products.html">
+                        <h6 class="gold_arrow">&#10094;</h6>
                     </a>
                 </div>
-                <div class="icon_background">
-                    <a href="mailto:kontakt@draupnir.com" class="icon_anchor">
-                        <svg class="icon" height="480pt" viewBox="0 0 480 480" width="480pt"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm0 464c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.140625 123.652344-100.347656 223.859375-224 224zm0 0" />
-                            <path
-                                d="m352 144h-224c-4.417969 0-8 3.582031-8 8v176c0 4.417969 3.582031 8 8 8h224c4.417969 0 8-3.582031 8-8v-176c0-4.417969-3.582031-8-8-8zm-21.601562 16-90.398438 77.464844-90.398438-77.464844zm-194.398438 160v-150.609375l98.792969 84.679687c2.992187 2.5625 7.40625 2.5625 10.398437 0l98.808594-84.679687v150.609375zm0 0" />
-                        </svg>
+                <div class="grid_container_goback">
+                    <a href="../pages/products.html">
+                        <h6>Tilbage til produktoversigt</h6>
                     </a>
                 </div>
-                <div class="icon_background">
-                    <a href="https://goo.gl/maps/QionMWBkwZSLFn4k6" target="_blank" class="icon_anchor">
-                        <svg class="icon" height="480pt" viewBox="0 0 480 480" width="480pt"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm0 464c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.140625 123.652344-100.347656 223.859375-224 224zm0 0" />
-                            <path
-                                d="m240 112c-52.996094.058594-95.941406 43.003906-96 96 0 66.542969 86.65625 153.96875 90.34375 157.65625 3.125 3.121094 8.1875 3.121094 11.3125 0 3.6875-3.6875 90.34375-91.113281 90.34375-157.65625-.058594-52.996094-43.003906-95.941406-96-96zm0 236.425781c-19.113281-20.425781-80-89.59375-80-140.425781 0-44.183594 35.816406-80 80-80s80 35.816406 80 80c0 50.785156-60.894531 120-80 140.425781zm0 0" />
-                            <path
-                                d="m240 160c-17.671875 0-32 14.328125-32 32s14.328125 32 32 32 32-14.328125 32-32-14.328125-32-32-32zm0 48c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16 16 7.164062 16 16-7.164062 16-16 16zm0 0" />
-                        </svg>
+                <div class="grid_container_diasshow">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img
+                                class="slide_img"
+                                alt="lunging rains draupnir"
+                                src="../img/products/indspandingstojler_1.png"
+                            />
+                        </div>
+                        <div class="mySlides fade">
+                            <img
+                                class="slide_img"
+                                alt="luning equipment draupnir"
+                                src="../img/products/longeringssaet_3.png"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_container_arrow_prew">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                </div>
+                <div class="grid_container_dots">
+                    <div style="text-align: center">
+                        <span class="dot dot8" onclick="currentSlide(1)"></span>
+                        <span class="dot dot9" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+                <div class="grid_container_arrow_next">
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="grid_container_product_text">
+                    <img
+                        src="../img/sekundaer-black.svg"
+                        alt="draupnir danmark logo"
+                        class="logo_secondary_black"
+                    />
+                    <h2 class="product_heading"><b>Indspændingstøjler</b></h2>
+                    <p>
+                        Indpændingstøjler fra Draupnir i samme lækre og holdbare
+                        læderkvalitet som de øvrige Draupnir-produkter. Læderet
+                        er italiensk og tysk og er garvet under miljøvenlige
+                        forhold. <br />Indspændingstøjlerne har karabinhager i
+                        begge ender for nem montering og spænder til justering.
+                        En elastisk gummiring udgør et moderat tøjletryk.
+                    </p>
+                    <h5 class="price_text">Vejledende udsalgspris</h5>
+                    <h3 class="price">DKK 900,-</h3>
+                    <a href="../pages/stores.html">
+                        <h4 class="button button_red">Find forhandler</h4>
                     </a>
                 </div>
-                <div class="icon_background">
-                    <a href="tel:+45-5194-9561" class="icon_anchor">
-                        <svg class="icon" height="480pt" viewBox="0 0 480 480" width="480pt"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm0 464c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.140625 123.652344-100.347656 223.859375-224 224zm0 0" />
-                            <path
-                                d="m345.175781 269.265625-67.902343-12c-3.4375-.605469-6.867188 1.082031-8.480469 4.175781l-16.464844 31.550782c-29.132813-12.902344-52.414063-36.195313-65.304687-65.335938l31.519531-16.464844c3.09375-1.613281 4.78125-5.042968 4.175781-8.480468l-12-67.894532c-.375-2.136718-1.601562-4.027344-3.398438-5.242187-17.167968-11.578125-39.324218-12.742188-57.609374-3.023438-18.285157 9.722657-29.710938 28.742188-29.710938 49.449219.113281 101.574219 82.425781 183.886719 184 184 20.710938-.003906 39.730469-11.4375 49.449219-29.726562 9.714843-18.292969 8.542969-40.453126-3.050781-57.617188-1.210938-1.789062-3.09375-3.015625-5.222657-3.390625zm-41.175781 74.734375c-92.738281-.105469-167.894531-75.261719-168-168-.003906-14.210938 7.535156-27.355469 19.800781-34.535156 12.265625-7.175782 27.421875-7.304688 39.808594-.335938l10.34375 58.605469-32.800781 17.121094c-3.59375 1.875-5.21875 6.136719-3.785156 9.929687 14.625 38.6875 45.15625 69.238282 83.839843 83.878906 3.792969 1.433594 8.054688-.191406 9.929688-3.785156l17.128906-32.800781 58.605469 10.347656c6.953125 12.382813 6.8125 27.523438-.359375 39.78125-7.175781 12.253907-20.308594 19.789063-34.511719 19.792969zm0 0" />
-                        </svg>
-                    </a>
+            </div>
+            <!-- related products -->
+            <section class="related_products">
+                <div class="wrapper">
+                    <h2 class="product_heading white_text">
+                        Relaterede produkter
+                    </h2>
+                    <div class="line product_line3"></div>
+                    <div class="container">
+                        <div class="filterDiv lunging">
+                            <img
+                                class="products_filter_img2"
+                                alt="draupnir longegjord til islandsk hest"
+                                src="../img/products/longegjorde_2.png"
+                            />
+                            <h4>Longegjord</h4>
+                            <a href="../pages/products_lunging_girth.html">
+                                <h5 class="products_filter_btn">LÆS MERE</h5>
+                            </a>
+                        </div>
+                        <div class="filterDiv lunging">
+                            <img
+                                class="products_filter_img2"
+                                alt="draupnir longesæt til islandsk hest"
+                                src="../img/products/longeringssaet_3.png"
+                            />
+                            <h4>Longesæt</h4>
+                            <a href="../pages/products_lunging_equipment.html">
+                                <h5 class="products_filter_btn">LÆS MERE</h5>
+                            </a>
+                        </div>
+                        <div class="filterDiv reins">
+                            <img
+                                class="products_filter_img2"
+                                alt="draupnir tøjler læder til islandsk hest"
+                                src="../img/products/tojler_laeder_3.1.png"
+                            />
+                            <h4>Tøjler læder</h4>
+                            <a href="../pages/products_rains_leather.html">
+                                <h5 class="products_filter_btn">LÆS MERE</h5>
+                            </a>
+                        </div>
+                        <div class="filterDiv reins">
+                            <img
+                                class="products_filter_img2"
+                                alt="draupnir tøjler gummi til islandsk hest"
+                                src="../img/products/toejler_1_gummi.png"
+                            />
+                            <h4>Tøjler gummi</h4>
+                            <a href="../pages/products_rains_rubber.html">
+                                <h5 class="products_filter_btn">LÆS MERE</h5>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </div>
-        <!-- copyright bottom -->
-        <p class="white_text copyright">
-            &copy; Copyright 2021 Maja Wennerwald, Camilla Nørgaard, Lise-May Byfuglien, Melina Kaetow &
-            Jesper Krüger.
-            All rights reserved.
-        </p>
-    </footer>
-</body>
+        </main>
+        <footer>
+            <div class="flex_box">
+                <!-- address -->
+                <div class="address">
+                    <h2 class="footer_h2 white_text">Draupnir Danmark</h2>
+                    <p class="white_text">
+                        Debelmosevej 3<br />
+                        6900 Skjern<br /><br />
+                        CVR: 32165400
+                    </p>
+                </div>
+                <section class="icon_section">
+                    <h2 class="icon_section_h2">Icon Section</h2>
+                    <!-- some and contact icons -->
+                    <div class="icon_wrapper">
+                        <div class="icon_background">
+                            <a
+                                href="https://www.facebook.com/draupnirdanmark"
+                                target="_blank"
+                                class="icon_anchor"
+                            >
+                                <svg
+                                    class="icon"
+                                    enable-background="new 0 0 512 512"
+                                    height="512"
+                                    viewBox="0 0 512 512"
+                                    width="512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g>
+                                        <path
+                                            d="m437.02 74.98c-48.353-48.351-112.64-74.98-181.02-74.98s-132.667 26.629-181.02 74.98c-48.351 48.353-74.98 112.64-74.98 181.02s26.629 132.667 74.98 181.02c48.353 48.351 112.64 74.98 181.02 74.98s132.667-26.629 181.02-74.98c48.351-48.353 74.98-112.64 74.98-181.02s-26.629-132.667-74.98-181.02zm-10.607 351.433c-34.091 34.091-76.596 56.708-122.832 65.917v-164.701h34.338c7.133 0 13.323-4.833 15.053-11.753l12.025-48.097c1.167-4.668.137-9.52-2.824-13.312s-7.418-5.967-12.229-5.967h-53.862c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h53.862c.075 0 .251 0 .407.199.155.198.112.37.094.443l-12.024 48.097c-.058.23-.264.391-.501.391h-41.838c-4.142 0-7.5 3.358-7.5 7.5v174.684c-10.714 1.437-21.59 2.186-32.582 2.186-64.374 0-124.894-25.068-170.413-70.587s-70.587-106.039-70.587-170.413 25.068-124.894 70.587-170.413 106.039-70.587 170.413-70.587 124.894 25.068 170.413 70.587 70.587 106.039 70.587 170.413-25.068 124.894-70.587 170.413z"
+                                        />
+                                        <path
+                                            d="m352.193 96.193h-48.097c-52.757 0-95.677 42.921-95.677 95.678v56.629h-48.613c-8.556 0-15.516 6.96-15.516 15.516v48.097c0 8.556 6.96 15.516 15.516 15.516h48.613v136.791c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-144.291c0-4.142-3.358-7.5-7.5-7.5h-56.113c-.285 0-.516-.231-.516-.516v-48.097c0-.285.231-.516.516-.516h56.113c4.142 0 7.5-3.358 7.5-7.5v-64.129c0-44.486 36.192-80.678 80.677-80.678h48.097c.285 0 .516.231.516.516v48.097c0 .285-.231.516-.516.516h-32.064c-17.396 0-31.548 14.152-31.548 31.548v32.064c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-32.064c0-9.125 7.423-16.548 16.548-16.548h32.064c8.556 0 15.516-6.96 15.516-15.516v-48.097c0-8.555-6.96-15.516-15.516-15.516z"
+                                        />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="icon_background">
+                            <a
+                                href="mailto:kontakt@draupnir.com"
+                                class="icon_anchor"
+                            >
+                                <svg
+                                    class="icon"
+                                    height="480pt"
+                                    viewBox="0 0 480 480"
+                                    width="480pt"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm0 464c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.140625 123.652344-100.347656 223.859375-224 224zm0 0"
+                                    />
+                                    <path
+                                        d="m352 144h-224c-4.417969 0-8 3.582031-8 8v176c0 4.417969 3.582031 8 8 8h224c4.417969 0 8-3.582031 8-8v-176c0-4.417969-3.582031-8-8-8zm-21.601562 16-90.398438 77.464844-90.398438-77.464844zm-194.398438 160v-150.609375l98.792969 84.679687c2.992187 2.5625 7.40625 2.5625 10.398437 0l98.808594-84.679687v150.609375zm0 0"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="icon_background">
+                            <a
+                                href="https://goo.gl/maps/QionMWBkwZSLFn4k6"
+                                target="_blank"
+                                class="icon_anchor"
+                            >
+                                <svg
+                                    class="icon"
+                                    height="480pt"
+                                    viewBox="0 0 480 480"
+                                    width="480pt"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm0 464c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.140625 123.652344-100.347656 223.859375-224 224zm0 0"
+                                    />
+                                    <path
+                                        d="m240 112c-52.996094.058594-95.941406 43.003906-96 96 0 66.542969 86.65625 153.96875 90.34375 157.65625 3.125 3.121094 8.1875 3.121094 11.3125 0 3.6875-3.6875 90.34375-91.113281 90.34375-157.65625-.058594-52.996094-43.003906-95.941406-96-96zm0 236.425781c-19.113281-20.425781-80-89.59375-80-140.425781 0-44.183594 35.816406-80 80-80s80 35.816406 80 80c0 50.785156-60.894531 120-80 140.425781zm0 0"
+                                    />
+                                    <path
+                                        d="m240 160c-17.671875 0-32 14.328125-32 32s14.328125 32 32 32 32-14.328125 32-32-14.328125-32-32-32zm0 48c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16 16 7.164062 16 16-7.164062 16-16 16zm0 0"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="icon_background">
+                            <a href="tel:+45-5194-9561" class="icon_anchor">
+                                <svg
+                                    class="icon"
+                                    height="480pt"
+                                    viewBox="0 0 480 480"
+                                    width="480pt"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm0 464c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.140625 123.652344-100.347656 223.859375-224 224zm0 0"
+                                    />
+                                    <path
+                                        d="m345.175781 269.265625-67.902343-12c-3.4375-.605469-6.867188 1.082031-8.480469 4.175781l-16.464844 31.550782c-29.132813-12.902344-52.414063-36.195313-65.304687-65.335938l31.519531-16.464844c3.09375-1.613281 4.78125-5.042968 4.175781-8.480468l-12-67.894532c-.375-2.136718-1.601562-4.027344-3.398438-5.242187-17.167968-11.578125-39.324218-12.742188-57.609374-3.023438-18.285157 9.722657-29.710938 28.742188-29.710938 49.449219.113281 101.574219 82.425781 183.886719 184 184 20.710938-.003906 39.730469-11.4375 49.449219-29.726562 9.714843-18.292969 8.542969-40.453126-3.050781-57.617188-1.210938-1.789062-3.09375-3.015625-5.222657-3.390625zm-41.175781 74.734375c-92.738281-.105469-167.894531-75.261719-168-168-.003906-14.210938 7.535156-27.355469 19.800781-34.535156 12.265625-7.175782 27.421875-7.304688 39.808594-.335938l10.34375 58.605469-32.800781 17.121094c-3.59375 1.875-5.21875 6.136719-3.785156 9.929687 14.625 38.6875 45.15625 69.238282 83.839843 83.878906 3.792969 1.433594 8.054688-.191406 9.929688-3.785156l17.128906-32.800781 58.605469 10.347656c6.953125 12.382813 6.8125 27.523438-.359375 39.78125-7.175781 12.253907-20.308594 19.789063-34.511719 19.792969zm0 0"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <section class="trustpilot">
+                        <h2 class="trustpilot_section_h2">
+                            Trustpilot Section
+                        </h2>
+                        <!-- TrustBox widget - Micro Review Count -->
+                        <div
+                            class="trustpilot-widget"
+                            data-locale="da-DK"
+                            data-template-id="5419b6a8b0d04a076446a9ad"
+                            data-businessunit-id="608fb4cb377e490001769c69"
+                            data-style-height="24px"
+                            data-style-width="100%"
+                            data-theme="dark"
+                        >
+                            <a
+                                href="https://dk.trustpilot.com/review/draupnir.com"
+                                target="_blank"
+                                rel="noopener"
+                                >Trustpilot</a
+                            >
+                        </div>
+                        <!-- End TrustBox widget -->
+                    </section>
+                </section>
+            </div>
+            <!-- copyright bottom -->
+            <p class="white_text copyright">
+                &copy; Copyright 2021 Maja Wennerwald, Camilla Nørgaard,
+                Lise-May Byfuglien, Melina Kaetow & Jesper Krüger. All rights
+                reserved.
+            </p>
+        </footer>
+    </body>
 </html>
