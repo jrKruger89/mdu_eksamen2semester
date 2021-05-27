@@ -13,11 +13,10 @@ var draupnir_popup = new mapboxgl.Popup({
     offset: 35,
     closeButton: false,
 }).setHTML(
-    '<h5 class="white_text map_h5">Draupnir Danmark</h5>' +
+    '<h5 class="white_text map_h5">Debelmose Rideudstyr</h5>' +
         "<p><br>Debelmosevej 3<br>6900 Skjern</p>" +
         "<p><br>Tlf. +45 5194 9561</p>" +
-        '<br><a href="mailto:sales@draupnir.com">Mail: sales@draupnir.com</a><br>' +
-        '<br><a href="http://draupnir.com/" target="_blank">www.draupnir.com</a>'
+        '<br><a href="mailto:sales@draupnir.com">Mail: sales@draupnir.com</a><br>'
 );
 
 var troldkaer_popup = new mapboxgl.Popup({
