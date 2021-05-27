@@ -361,12 +361,7 @@ nav {
     margin: 5px auto 25px auto;
     width: 255px;
 }
-.about_img {
-    width: 60%;
-    display: block;
-    padding: 20px;
-    margin: auto;
-}
+
 .about_p_hide {
     display: none;
 }
@@ -1522,16 +1517,11 @@ footer {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .about_wrapper p {
-        width: 48%;
-    }
+
     .about_text_wrapper {
         margin: 0 auto;
     }
-    .about_img {
-        width: 35%;
-        padding: 30px;
-    }
+
     .open {
         display: block;
     }
@@ -1550,7 +1540,7 @@ footer {
     }
     .rider_profile {
         width: 31%; //398
-        height: 85%;
+        height: 90%;
         margin-bottom: 20px;
         text-align: center;
     }
